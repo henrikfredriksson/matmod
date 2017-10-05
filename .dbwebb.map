@@ -1,0 +1,10 @@
+#
+# This file has two meanings.
+# First create these directories on dbwebb init-me in the me-dir.
+# Map item to dirname while doing, for example, dbwebb validate lab1
+#
+
+me/uppgift1
+me/uppgift2
+me/uppgift3
+me/redovisa
