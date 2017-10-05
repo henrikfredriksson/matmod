@@ -5,7 +5,7 @@ Matematisk modellering (with Python) (matmod)
 
 Course material for Matematisk modellering (with Python). Aimed at swedish audience at university level.
 
-Related to https://dbwebb.se/kurs/matmod
+Related to https://dbwebb.se/kurser/matmod
 
 The course repo is managed by a [dbwebb command line utility](https://dbwebb.se/dbwebb-cli).
 
