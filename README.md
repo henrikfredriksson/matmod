@@ -1,9 +1,9 @@
-Matematisk modellerering (with Python) (matmod)
+Matematisk modellering (with Python) (matmod)
 ===================
 
 [![Join the chat at https://gitter.im/dbwebb-se/matmod](https://badges.gitter.im/dbwebb-se/matmod.svg)](https://gitter.im/dbwebb-se/matmod?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Course material for Matematisk modellerering (with Python). Aimed at swedish audience at university level.
+Course material for Matematisk modellering (with Python). Aimed at swedish audience at university level.
 
 Related to https://dbwebb.se/kurs/matmod
 
