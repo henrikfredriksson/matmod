@@ -3,13 +3,12 @@
 ## Kursplanering
 
 Länkar
-
     
 * [Forum](https://dbwebb.se/forum/viewforum.php?f=72)
 * [Gitter](https://gitter.im/dbwebb-se/matmod)
 * [Kursrepo på Github](https://github.com/dbwebb-se/matmod)
 
-|Vecka| Moment
+|Vecka | Moment
 |---|---|
 |44|**Algebra och polynom**|
     ||Polynom och räkneregler|
