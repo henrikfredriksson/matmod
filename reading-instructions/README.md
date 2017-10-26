@@ -13,9 +13,12 @@ I kursen använder två stycken böcker som kurslitteratur
 
 1. [Matematik 5000 3c
    Basåret](https://www.nok.se/Laromedel/-Laromedelswebb-/-B23-/-Lararwebb-/Matematik-5000/-Flikar-/VUXBasaret/Kurs-3c-Basaret-larobok/)
-   (Bok M)
+   
 2. [Statistik
-   Dataanalys](https://www.studentlitteratur.se/#dataanalys) (Bok S)
+   Dataanalys](https://www.studentlitteratur.se/#dataanalys)
+   
+I läsanvisningarna för vecka 44-47 så är "boken" Matematik 5000 3c och
+i läsanvisningarna för vecka 48-51 så är "boken" Statistiks dataanalys.
 
 Varje kapitel inleds med teori följt av exempel och därefter
 övningsuppgifter. Läs teorin före du börjar arbeta med uppgifterna. I
