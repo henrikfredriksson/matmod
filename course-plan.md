@@ -1,9 +1,10 @@
-
-
 # MA1477 Matmod
 
+## Kursplanering
 
 Länkar
+
+
     
 * [Forum](https://dbwebb.se/forum/viewforum.php?f=72)
 * [Gitter](https://gitter.im/dbwebb-se/matmod)
@@ -42,7 +43,7 @@ Länkar
 |50|**Statistisk slutledning**|
 ||Slumpmässigt urval och punkskattning|
 ||Intervallskattning|
-||Hypotesprö�vning|
+||Hypotesprövning|
 ||Analys av frekvenstabeller|
 |51|**Linjär regression**|
 |52|Repetition/extra|
