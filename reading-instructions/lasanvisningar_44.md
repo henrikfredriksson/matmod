@@ -42,7 +42,7 @@ Kort video (14 min) om kvadrötter och absolutbelopp finns
 
 #### Ekvationer
 
-Läs sidorna 119, 122-123 i boken.
+    Läs sidorna 119, 122-123 i boken.
 
 ##### Rekommenderade övningar
 2161 − 2165, 2169, 2170, 2172, 2173, 2178, 2179, 2183,
