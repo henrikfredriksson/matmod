@@ -42,14 +42,7 @@ Kort video (14 min) om kvadrötter och absolutbelopp finns
 
 #### Ekvationer
 
-Läs sidorna 119, 122-123 i boken. Tänk på att lösningformeln 
-
-\begin{equation} 
-x = - \frac{p}{2} \pm \sqrt{\left(\frac{p}{2} \right)^2 - q} 
-\end{equation} 
-
-enbart gäller för ekvationer på formen $x^2 + px +q = 0$, dvs där koefficienten framför $x^2$ är $1$.
-
+Läs sidorna 119, 122-123 i boken.
 
 ##### Rekommenderade övningar
 2161 − 2165, 2169, 2170, 2172, 2173, 2178, 2179, 2183,
