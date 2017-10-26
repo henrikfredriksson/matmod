@@ -1,4 +1,4 @@
-* MA1477 Matmod - Läsanvisningar
+# MA1477 Matmod - Läsanvisningar
 
 Syftet med läsanvisningarna är att vägleda
 kursens deltagare
@@ -22,7 +22,7 @@ Varje kapitel inleds med teori följt av exempel och därefter
 statistiken och sannolikhetsläran så kan det dyka upp nya definitioner
 och begrepp som du inte stött på innan. Ta dig tid för att förstå vad
 som menas med dessa. Ibland så kan det behövas att man läser igenom
-materialet ett fler gånger innan
+materialet ett fler gånger innan man fått grepp på materialet.
 
 
 När du arbetar med uppgifterna och kanske inte kommer till rätt svar,
