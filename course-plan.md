@@ -17,32 +17,32 @@ Länkar
 ||Ekvationer|
 ||Polynom i faktorform|
 |45|**Rationella uttryck**|
-    ||Vad menas med ett rationellt uttryck?|
-    ||Förlängning och förkortning|
-    ||Addition och subtraktion|
-    ||Multiplikation och division|
+||Vad menas med ett rationellt uttryck?|
+||Förlängning och förkortning|
+||Addition och subtraktion|
+||Multiplikation och division|
 |46|**Funktioner**|
-    ||Räta linjens ekvation|
-    ||Andragradsfunktioner|
-    ||Exponentialfunktioner och potensfunktioner|
+||Räta linjens ekvation|
+||Andragradsfunktioner|
+||Exponentialfunktioner och potensfunktioner|
 |47|**Förändringshstigheter och derivator**|
-    || Ändringskvoter och begreppet derivata
-    || Gränsvärde och derivatans definition
-    || Deriveringsregler I
-    || Deriveringsregler II
-    || Vad säger förstaderivatan om grafen?
-    || Derivator och tillämpningar
+|| Ändringskvoter och begreppet derivata
+|| Gränsvärde och derivatans definition
+|| Deriveringsregler I
+|| Deriveringsregler II
+|| Vad säger förstaderivatan om grafen?
+|| Derivator och tillämpningar
 |48|**Sannolikhetslära**|
-    ||Introduktion till sannolikhetslära |
-    ||Sannolikhetsbegreppet |
-    ||Diskret slumpvariabel|
+||Introduktion till sannolikhetslära |
+||Sannolikhetsbegreppet |
+||Diskret slumpvariabel|
 |49| Tvådimensionell slumpvariabel |
-    || Normalfördelning |
+|| Normalfördelning |
 |50|**Statistisk slutledning**|
-    ||Slumpmässigt urval och punkskattning|
-    ||Intervallskattning|
-    ||Hypotesprövning|
-    ||Analys av frekvenstabeller|
+||Slumpmässigt urval och punkskattning|
+||Intervallskattning|
+||Hypotesprövning|
+||Analys av frekvenstabeller|
 |51|**Linjär regression**|
 |52|Repetition/extra|
 |1|Repetition/extra|
