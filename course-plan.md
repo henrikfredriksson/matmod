@@ -3,19 +3,18 @@
 # MA1477 Matmod
 
 
-
-L‰nkar
+L√§nkar
     
 * [Forum](https://dbwebb.se/forum/viewforum.php?f=72)
 * [Gitter](https://gitter.im/dbwebb-se/matmod)
-* [Kursrepo pÂ Github](https://github.com/dbwebb-se/matmod)
+* [Kursrepo p√• Github](https://github.com/dbwebb-se/matmod)
 
 |Vecka| Moment
 |---|---|
 |44|**Algebra och polynom**|
-    ||Polynom och r‰kneregler|
+    ||Polynom och r√§kneregler|
     ||Potenser|
-    ||Kvadratrˆter och absolutbelopp|
+    ||Kvadratr√∂tter och absolutbelopp|
     ||Ekvationer|
     ||Polynom i faktorform|
 |45|**Rationella uttryck**|
@@ -43,7 +42,7 @@ L‰nkar
 |50|**Statistisk slutledning**|
 ||Slumpm√§ssigt urval och punkskattning|
 ||Intervallskattning|
-||Hypotespr√∂vning|
+||Hypotespr√∂∂vning|
 ||Analys av frekvenstabeller|
 |51|**Linj√§r regression**|
 |52|Repetition/extra|
