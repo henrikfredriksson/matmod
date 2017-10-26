@@ -11,11 +11,11 @@ Länkar
 |Vecka | Moment
 |---|---|
 |44|**Algebra och polynom**|
-    ||Polynom och räkneregler|
-    ||Potenser|
-    ||Kvadratrötter och absolutbelopp|
-    ||Ekvationer|
-    ||Polynom i faktorform|
+||Polynom och räkneregler|
+||Potenser|
+||Kvadratrötter och absolutbelopp|
+||Ekvationer|
+||Polynom i faktorform|
 |45|**Rationella uttryck**|
     ||Vad menas med ett rationellt uttryck?|
     ||Förlängning och förkortning|
