@@ -2,6 +2,8 @@ Matematisk modellering (with Python) (matmod)
 ===================
 
 [![Join the chat at https://gitter.im/dbwebb-se/matmod](https://badges.gitter.im/dbwebb-se/matmod.svg)](https://gitter.im/dbwebb-se/matmod?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Build Status](https://travis-ci.org/dbwebb-se/matmod.svg)](https://travis-ci.org/dbwebb-se/matmod)
+[![CircleCI](https://circleci.com/gh/dbwebb-se/matmod.svg?style=svg)](https://circleci.com/gh/dbwebb-se/matmod)
 
 Course material for Matematisk modellering (with Python). Aimed at swedish audience at university level.
 
