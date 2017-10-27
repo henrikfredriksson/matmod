@@ -4,5 +4,35 @@
 # Usage: dbwebb inspect kmom01
 #
 # Sequence executed:
-# python(), pythonkmom01(), pythonlast()
+# matmod(), matmodkmom01(), matmodlast()
 #
+
+
+
+#
+# Test matmod general, always executed first
+#
+matmod()
+{
+    inspectIntro
+}
+
+
+
+#
+# Test general, always executed last in sequence
+#
+matmodlast()
+{
+    inspectMe "me/redovisa" "" "" "" "redovisa"
+}
+
+
+
+#
+# Test matmod kmom01
+#
+matmodkmom01()
+{
+    :
+}
