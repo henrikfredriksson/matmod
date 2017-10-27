@@ -11,6 +11,7 @@ v1.0.1 (2017-10-27)
 * Added pythonic validation through .pylintrc.
 * Update to latest version of Makefile.
 * Add support for dbwebb validate tools.
+* Add base for inspect, not working.
 
 
 v1.0.0 (2017-10-05)
