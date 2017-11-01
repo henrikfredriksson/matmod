@@ -1,5 +1,10 @@
 # MA1477 Matmod - Läsanvisningar
 
+**Notera att i läsanvisningarna för vecka 44-47 så är "boken" Matematik 5000 3c och
+i läsanvisningarna för vecka 48-51 så är "boken" Statistisk
+dataanalys.**
+
+
 Syftet med läsanvisningarna är att vägleda
 kursens deltagare
 genom kursens material och tillhandahålla instuderingsfrågor.
@@ -17,8 +22,6 @@ I kursen använder två stycken böcker som kurslitteratur
 2. [Statistik
    Dataanalys](https://www.studentlitteratur.se/#dataanalys)
    
-I läsanvisningarna för vecka 44-47 så är "boken" Matematik 5000 3c och
-i läsanvisningarna för vecka 48-51 så är "boken" Statistiks dataanalys.
 
 Varje kapitel inleds med teori följt av exempel och därefter
 övningsuppgifter. Läs teorin före du börjar arbeta med uppgifterna. I
