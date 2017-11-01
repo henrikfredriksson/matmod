@@ -1,7 +1,7 @@
 # MA1477 Matmod - Läsanvisningar
 
-**Notera att läsanvisningarna för vecka 44-47 så är "boken" Matematik 5000 3c och
-i läsanvisningarna för vecka 48-51 så är "boken" Statistiks
+**Notera att i läsanvisningarna för vecka 44-47 så är "boken" Matematik 5000 3c och
+i läsanvisningarna för vecka 48-51 så är "boken" Statistisk
 dataanalys.**
 
 
