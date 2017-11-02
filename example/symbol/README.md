@@ -5,13 +5,13 @@
 För att kunna använda symboliska beräkningar i Python så behöver
 använda biblioteketet [Sympy](http://www.sympy.org/en/index.html).
 
-För att 
+För att läsa in hela Sympy skiver man.
 
 ```python
 from sympy import *
 ```
 
-Vi kan nu deklarera en symbolisk variabel $$x$$ enligt
+Vi kan nu deklarera en symbolisk variabel $x$ enligt
 
 ```python
 x = Symbol('x')
@@ -30,7 +30,7 @@ expand((x+1)**2)
 ```
 
 Med `solve`så kan man lösa ekvationer. Notera att `solve(f)` löser
-ekvationen $$f(x) = 0$$. 
+ekvationen $f(x) = 0$.
 
 
 ```Python
