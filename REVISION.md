@@ -1,6 +1,15 @@
 Revision History
 ===================
 
+v1.0.2 (2017-11-03)
+-------------------
+
+* Henrik added coursematerial.
+* Update pylintrc.
+* Add sympy to requirements.txt
+* Pass validation.
+
+
 v1.0.1 (2017-10-27)
 -------------------
 
