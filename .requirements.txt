@@ -1,4 +1,5 @@
 pylint >= 1.4.4
+sympy
 #coverage
 #flake8
 #flake8-docstrings
