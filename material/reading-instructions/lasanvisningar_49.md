@@ -2,3 +2,9 @@
 
 ## Läsanvisningar v. 49
 
+
+### Sannolikhetslära (forts).
+
+
+#### Tvådimensionell slumpvariabel
+#### Normalfördelning

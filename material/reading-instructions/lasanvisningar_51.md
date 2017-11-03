@@ -2,3 +2,5 @@
 
 ## Läsanvisningar v. 51
 
+
+### Linjär regression
