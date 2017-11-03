@@ -5,7 +5,7 @@
 [BASIC]
 
 # Good variable names which should always be accepted, separated by a comma
-good-names=i,j,k,ex,Run,_,x,y
+good-names=i,j,k,ex,Run,_,a,b,c,d,x,y,z
 
 
 [MESSAGES CONTROL]
