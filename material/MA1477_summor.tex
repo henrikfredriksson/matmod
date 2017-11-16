@@ -1,0 +1,114 @@
+\documentclass{beamer}
+\usetheme{Copenhagen}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+\usepackage{minted}
+\newtheorem{exempel}{Exempel}
+\newtheorem{tre}{Treveckorsuppgift}
+
+
+\author{Henrik Fredriksson}
+\institute{Blekinge Tekniska Högskola}
+\title{MA1477 Matematisk modellering \\ Summor och summanotation}
+\begin{document}
+
+
+\maketitle
+
+\begin{frame}
+\begin{exempel}
+  Betrakta summan av de tio första naturliga heltalen, dvs summan
+\[
+S = 1+2+3 + 4 + 5 + 6 + 7 + 8 + 9 + 10
+\]
+\end{exempel}
+\pause
+Vi ska titta på hur vi kan använda summatecknet $\sum$ (sigma) för att
+beskriva denna summa.
+
+\pause
+Summan $S = 1+2+3+4+5+6+7+8+9+10$ kan vi skriva som
+\[
+\sum_{i = 1}^{10} i
+\]
+\pause
+Variablen $i$ kallas för summationsindex, $1$ är nedre gräns för
+summationen, $10$ är övre gräns för summationen.
+\end{frame}
+
+
+\begin{frame}
+
+Mer generellt kan vi skriva summor på formen
+\[
+\sum_{i = m}^n a_i = a_m + a_{m+1} + a_{m+2} + \ldots + a_n
+\]
+
+\begin{itemize}
+\item $\sum$ summasymbol
+\item $i$ summationsindex
+\item $m$ nedre gräns
+\item $n$ övre gräns
+\item $a_i$ summand
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\begin{minted}{python}
+  def my_sum(l):
+      S = 0
+  for i in l:
+      S = S + i
+  return S
+\end{minted}
+
+
+  I Python så finns den inbyggda metoden \mint{python}|sum|
+  som kan användas enligt
+\begin{minted}{python}
+  sum([1,2,3,4,5,6,7,8,9,10])
+\end{minted}
+eller
+\begin{minted}{python}
+  sum(range(11))
+\end{minted}
+\end{frame}
+
+\begin{frame}{Ytterliggare exempel}
+  \begin{exempel}
+    Summan av kvadraterna av alla heltal mellan $1$ och $20$
+    \[
+      \sum_{i = 1}^{20} i^2 = 1^2 + 2^2+3^3 + \ldots + 20^2
+    \]
+    \pause
+    Summan av alla udda heltal mellan $5$ och $17$
+    \[
+      \sum_{i = 2}^{8} (2i +1) = 5+ 7 + 9 +\ldots + 17
+    \] 
+    \pause
+    Det aritmetiska medelvärdet av de $n$ talen $x_1, x_2 \ldots x_n$
+    \[
+      \dfrac{\sum_{i=1}^n x_i}{n} = \dfrac{x_1 + x_2 + \ldots + x_n}{n}
+    \]
+
+  \end{exempel}
+\end{frame}
+
+\begin{frame}{Treveckorsuppgift}
+
+  \begin{tre}
+    Beräkna summan
+    \[
+      \sum_{k = 0}^{10} (-1)^{2k+1}
+    \]
+  \end{tre}
+  Fyll i svaret på itslearning under treveckorsupprop.
+\end{frame}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
