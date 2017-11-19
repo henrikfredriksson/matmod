@@ -5,7 +5,7 @@ I detta kursmoment så kommer vi gå igenom vad en tidsserie är och hur
 man approximera derivatan för en tidsserie.
 
 En tidsserie är följd observationer ~x_1, x_2,...,x_T~ som är ordnade
-efter tiden. Observationen vid tidpunkten `t` betecknas med `x_t`.
+efter tiden. Observationen vid tidpunkten ~t~ betecknas med ~x_t~.
 
 Exempel på tidsserier är antalet bilar per timme som igenom kör förbi BTH under
 en dag, värdet på en viss aktie vid börsstängning under ett år och
@@ -13,10 +13,11 @@ antalet studenter antagna till Webbprogammeringsprogrammet under en 10
 års period.
 
 Antag att vi under en 10-timmars period gjort följande observationer
-~x_1 = 12, x_2 = 11, x_3 = 10, x_4 = 6,x_5 = 12, x_6 = 15,x_7 =9, x_8
-=8, x_9 =13, x_{10} = 8~
 
-Med hjälp av [[~matplotlib~][https://matplotlib.org/] så kan vi plotta tidsserien.
+~x_1 = 12, x_2 = 11, x_3 = 10, x_4 = 6, x_5 = 12, x_6 = 15, x_7 =9, x_8
+=8, x_9 =13, x_10 = 8~
+
+Med hjälp av [[~matplotlib~][https://matplotlib.org/]] så kan vi plotta tidsserien.
 
 #+begin_src python :session
 import matplotlib.pyplot as plt
