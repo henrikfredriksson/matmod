@@ -57,7 +57,7 @@ beräkan derivatan numeriskt
 [[https://www.youtube.com/watch?v=O8BihHoIZ-Y&t][Differenskvoter 2]]
 
 
-I [[https://pandas.pydata.org/][pandas]] finns metoden =diff= för datatypen =DataFrame" som returnerar en array
+I [[https://pandas.pydata.org/][pandas]] finns metoden =diff= för datatypen =DataFrame= som returnerar en array
 med element =x[t+1] - x[t]=.
  
 #+begin_src python :session
