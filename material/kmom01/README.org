@@ -96,7 +96,9 @@ innehålla följande:
 
 3. Plotta tiddserien med de numeriska derivatorna i samma fönster.
 
-4. Dela in er tidsserie i intervall () 
+4. Dela in er tidsserie i ett antal lika stora tidsintervall och
+   beräkna medelvärdet av observationerna för varje tidsintervall. Beräkna
+   och plotta den nya tidsserien tillsammans med de olika derivatorna.
 
 5. Reflektera över och beskriv vad derivatan för den tidsserie ni valt
    betyder. Vad är för- och nackdelarna med att använda "genomsnittsfiltret"?
