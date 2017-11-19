@@ -43,9 +43,11 @@ plt.show()
 
 
 Antag att grafen ovan representerar en funktion ~f~. Tyvärr så kan vi inte använda derivatans definition för att
-beräkna för att derivatan eftersom vi inte vet hur
-funktionen är definierad. Det vi kan använda oss av är numerisk derivering med
-hjälp av /bakåt differenskvot/, /framåt differenskvot/ och /central differenskvot/.
+för att beräkna derivatan eftersom vi inte vet hur
+funktionen är definierad. Det vi kan använda oss av är numerisk
+derivering. Vi ska med
+hjälp av /bakåt differenskvot/, /framåt differenskvot/ och /central
+differenskvot/ beräkna derivatan.
 
 Följande videos demonsterar hur man använda differenskvoter för att
 beräkan derivatan numeriskt
@@ -55,8 +57,8 @@ beräkan derivatan numeriskt
 [[https://www.youtube.com/watch?v=O8BihHoIZ-Y&t][Differenskvoter 2]]
 
 
-I [[https://pandas.pydata.org/][pandas]] finns metoden `diff` för datatypen som returnerar en array
-med element `x[t+1] - x[t]`.
+I [[https://pandas.pydata.org/][pandas]] finns metoden =diff= för datatypen =DataFrame" som returnerar en array
+med element =x[t+1] - x[t]=.
  
 #+begin_src python :session
 import matplotlib.pyplot as plt
@@ -66,7 +68,7 @@ t = range(1,11)
 x = [12,11,10,6,12, 15,9,8,13, 8]
 
 df = pd.Series(x, index=t)
-dt  = df.diff()
+dt = df.diff()
 plt.xlabel('Time')
 plt.ylabel('Observations')
 plt.title('Timeseries example + Derivative')
@@ -82,8 +84,29 @@ plt.show()
 
 
 * Uppgifter
+Uppgifterna ska redovisas på en webbsida som ni skapar själva och ska
+innehålla följande:
 
 
 1. Hitta en tidsserie som ni vill använda för uppgiften och plotta
    tidsserien.
-2. 
+
+2. Ni ska implementera egna metoder för att numeriskt beräkna derivatan
+   med hjälp av framåt-, bakåt- och central differenskvot.
+
+3. Plotta tiddserien med de numeriska derivatorna i samma fönster.
+
+4. Dela in er tidsserie i intervall () 
+
+5. Reflektera över och beskriv vad derivatan för den tidsserie ni valt
+   betyder. Vad är för- och nackdelarna med att använda "genomsnittsfiltret"?
+
+6. Inlämning sker via itslearning där ni ska bifoga länk till den
+   webbsida som ni skapat. Ni ska därefter bedöma en studiekamrats
+   webbsida (tilldelning av bedömning bestäms senare) utifrån följande
+   punkter.
+
+   - Är det tydligt vad tidsserien beskriver?
+   - Framgår det tydligt vad derivatan för tidsserien beskriver?
+   - Verkar beräkningar derivatorna för tidsserien stämma?
+   
