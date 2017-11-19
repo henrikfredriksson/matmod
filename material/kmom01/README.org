@@ -37,4 +37,4 @@ plt.show()
 #+RESULTS:
 
 #+ATTR_HTML style="center"
-[[timesseries.png]]
+[[https://github.com/henrikfredriksson/matmod/blob/master/material/kmom01/timeseries.png]]
