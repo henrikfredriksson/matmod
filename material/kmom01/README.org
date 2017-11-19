@@ -14,7 +14,7 @@ antalet studenter antagna till Webbprogammeringsprogrammet under en 10
 
 Antag att vi under en 10-timmars period gjort följande observationer
 $$x_1 = 12, x_2 = 11, x_3 = 10, x_4 = 6,x_5 = 12, x_6 = 15,x_7 =9, x_8
-=8, x_9 =13, x_{10} = 8$$
+=8, x_9 =13, x_{10} = 8$$q
 
 
 #+begin_src python :session
@@ -36,5 +36,5 @@ plt.show()
 
 #+RESULTS:
 
-
-[[file:/~/Desktop/timesseries.png]]
+#+ATTR_HTML style="center"
+[[timesseries.png]]
