@@ -28,8 +28,9 @@ plt.xlabel('Time')
 plt.ylabel('Observations')
 plt.title('Timeseries example')
 plt.grid(True)
-plt.savefig('timeseries.png')
 plt.plot(x, 'bo-')
+plt.savefig('timeseries.png')
+
 plt.show()
 
 #+end_src
