@@ -4,7 +4,7 @@
 I detta kursmoment så kommer vi gå igenom vad en tidsserie är och hur
 man approximera derivatan för en tidsserie.
 
-En tidsserie är följd observationer `x_1, x_2,...,x_T` som är ordnade
+En tidsserie är följd observationer ~x_1, x_2,...,x_T~ som är ordnade
 efter tiden. Observationen vid tidpunkten `t` betecknas med `x_t`.
 
 Exempel på tidsserier är antalet bilar som igenom kör förbi BTH under
