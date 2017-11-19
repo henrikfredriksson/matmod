@@ -14,8 +14,8 @@ antalet studenter antagna till Webbprogammeringsprogrammet under en 10
 
 Antag att vi under en 10-timmars period gjort följande observationer
 
-~x_1 = 12, x_2 = 11, x_3 = 10, x_4 = 6, x_5 = 12, x_6 = 15, x_7 =9, x_8
-=8, x_9 =13, x_10 = 8~
+~x_1 = 12, x_2 = 11, x_3 = 10, x_4 = 6, x_5 = 12, x_6 = 15, x_7 = 9, x_8
+= 8, x_9 = 13, x_10 = 8~
 
 Med hjälp av [[https://matplotlib.org/][matplotlib]] så kan vi plotta tidsserien.
 
@@ -23,7 +23,7 @@ Med hjälp av [[https://matplotlib.org/][matplotlib]] så kan vi plotta tidsseri
 import matplotlib.pyplot as plt
 
 t = range(1,11)
-x = [12,11,10,6,12, 15,9,8,13, 8]
+x = [12, 11, 10,6, 12, 15, 9, 8, 13, 8]
 
 plt.ylim((0,17))
 plt.xlabel('Time')
@@ -44,7 +44,7 @@ plt.show()
 
 Antag att grafen ovan representerar en funktion ~f~. Tyvärr så kan vi inte använda derivatans definition för att
 beräkna för att derivatan eftersom vi inte vet hur
-funktionen ser ut. Det vi kan använda oss av är numerisk derivering med
+funktionen är definierad. Det vi kan använda oss av är numerisk derivering med
 hjälp av /bakåt differenskvot/, /framåt differenskvot/ och /central differenskvot/.
 
 Följande videos demonsterar hur man använda differenskvoter för att
@@ -81,7 +81,7 @@ plt.show()
 [[https://github.com/henrikfredriksson/matmod/blob/master/material/kmom01/timeseries_derivative.png]]
 
 
-## Uppgifter
+* Uppgifter
 
 
 1. Hitta en tidsserie som ni vill använda för uppgiften och plotta
