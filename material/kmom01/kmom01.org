@@ -1,0 +1,42 @@
+#+TITLE: Kmom 01: Introduktion till tidsserieanalys
+#+AUTHOR: Henrik Frediksson och Thomas Sievert
+
+I detta kursmoment så kommer vi gå igenom vad en tidsserie är och hur
+man approximera derivatan för en tidsserie.
+
+En tidsserie är följd observationer $x_1, x_2,...,x_T$ som är ordnade
+efter tiden. Observationen vid tidpunkten $t$ betecknas med $x_t$.
+
+Exempel på tidsserier är antalet bilar som igenom kör förbi BTH under
+en dag, värdet på en viss aktie vid börsstängning under ett år och
+antalet studenter antagna till Webbprogammeringsprogrammet under en 10
+års period.
+
+Antag att vi under en 10-timmars period gjort följande observationer
+\[
+x_1 = 12, x_2 = 11, x_3 = 10, x_4 = 6,x_5 = 12, x_6 = 15,x_7 =9, x_8
+=8, x_9 =13, x_{10} = 8
+\]
+
+
+#+begin_src python :session
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = [12,11,10,6,12, 15,9,8,13, 8]
+
+plt.ylim((0,17))
+plt.xlabel('Time')
+plt.ylabel('Observations')
+plt.title('Timeseries example')
+plt.grid(True)
+plt.savefig('timeseries.png')
+plt.plot(x, 'bo-')
+plt.show()
+
+#+end_src
+
+#+RESULTS:
+
+
+[[file:/~/Desktop/timesseries.png]]
