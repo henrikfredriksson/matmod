@@ -13,10 +13,8 @@ antalet studenter antagna till Webbprogammeringsprogrammet under en 10
 års period.
 
 Antag att vi under en 10-timmars period gjort följande observationer
-\[
-x_1 = 12, x_2 = 11, x_3 = 10, x_4 = 6,x_5 = 12, x_6 = 15,x_7 =9, x_8
-=8, x_9 =13, x_{10} = 8
-\]
+$$x_1 = 12, x_2 = 11, x_3 = 10, x_4 = 6,x_5 = 12, x_6 = 15,x_7 =9, x_8
+=8, x_9 =13, x_{10} = 8$$
 
 
 #+begin_src python :session
