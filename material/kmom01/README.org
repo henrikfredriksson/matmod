@@ -17,19 +17,20 @@ Antag att vi under en 10-timmars period gjort följande observationer
 ~x_1 = 12, x_2 = 11, x_3 = 10, x_4 = 6, x_5 = 12, x_6 = 15, x_7 =9, x_8
 =8, x_9 =13, x_10 = 8~
 
-Med hjälp av [[https://matplotlib.org/][~matplotlib~]] så kan vi plotta tidsserien.
+Med hjälp av [[https://matplotlib.org/][matplotlib]] så kan vi plotta tidsserien.
 
 #+begin_src python :session
 import matplotlib.pyplot as plt
 
+t = range(1,11)
 x = [12,11,10,6,12, 15,9,8,13, 8]
 
-Plt.ylim((0,17))
+plt.ylim((0,17))
 plt.xlabel('Time')
 plt.ylabel('Observations')
 plt.title('Timeseries example')
 plt.grid(True)
-plt.plot(x, 'bo-')
+plt.plot(t,x, 'bo-')
 plt.savefig('timeseries.png')
 
 plt.show()
@@ -41,22 +42,48 @@ plt.show()
 [[https://github.com/henrikfredriksson/matmod/blob/master/material/kmom01/timeseries.png]]
 
 
-Med hjälp av derivatans funktion kan beräkna derivatan i punkt ~x_0~
-till en funktion med formeln
-
-[[https://github.com/henrikfredriksson/matmod/blob/master/material/kmom01/derivata.png]]
-
-
-Antag att grafen ovan representerar en funktion ~f~, tyvärr så kan vi inte använda derivatans definition för att
+Antag att grafen ovan representerar en funktion ~f~. Tyvärr så kan vi inte använda derivatans definition för att
 beräkna för att derivatan eftersom vi inte vet hur
-funktionen ser ut. Det vi använda oss av är numerisk derivering med
+funktionen ser ut. Det vi kan använda oss av är numerisk derivering med
 hjälp av /bakåt differenskvot/, /framåt differenskvot/ och /central differenskvot/.
 
-https://www.youtube.com/watch?v=ZetlczRQtf8
-https://www.youtube.com/watch?time_continue=138&v=O8BihHoIZ-Y
+Följande videos demonsterar hur man använda differenskvoter för att
+beräkan derivatan numeriskt
+
+[[https://www.youtube.com/watch?v=ZetlczRQtf8][Differenskvoter 1]]
+
+[[https://www.youtube.com/watch?v=O8BihHoIZ-Y&t][Differenskvoter 2]]
+
+
+I [[https://pandas.pydata.org/][pandas]] finns metoden `diff` för datatypen som returnerar en array
+med element `x[t+1] - x[t]`.
+ 
+#+begin_src python :session
+import matplotlib.pyplot as plt
+import pandas as pd
+
+t = range(1,11)
+x = [12,11,10,6,12, 15,9,8,13, 8]
+
+df = pd.Series(x, index=t)
+dt  = df.diff()
+plt.xlabel('Time')
+plt.ylabel('Observations')
+plt.title('Timeseries example + Derivative')
+plt.grid(True)
+plt.plot(t,x, 'bo-', t, dt, 'r-')
+plt.show()
+#+end_src
+
+#+RESULTS:
+: Text(0.5,1,'Timeseries example + derivative')
+
+[[https://github.com/henrikfredriksson/matmod/blob/master/material/kmom01/timeseries_derivative.png]]
 
 
 ## Uppgifter
 
 
-1. Hitta en tidsserie som ni vill a
+1. Hitta en tidsserie som ni vill använda för uppgiften och plotta
+   tidsserien.
+2. 
