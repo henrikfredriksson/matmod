@@ -7,16 +7,16 @@ man approximera derivatan för en tidsserie.
 En tidsserie är följd observationer ~x_1, x_2,...,x_T~ som är ordnade
 efter tiden. Observationen vid tidpunkten `t` betecknas med `x_t`.
 
-Exempel på tidsserier är antalet bilar som igenom kör förbi BTH under
+Exempel på tidsserier är antalet bilar per timme som igenom kör förbi BTH under
 en dag, värdet på en viss aktie vid börsstängning under ett år och
 antalet studenter antagna till Webbprogammeringsprogrammet under en 10
 års period.
 
 Antag att vi under en 10-timmars period gjort följande observationer
-`x_1 = 12, x_2 = 11, x_3 = 10, x_4 = 6,x_5 = 12, x_6 = 15,x_7 =9, x_8
-=8, x_9 =13, x_{10} = 8`
+~x_1 = 12, x_2 = 11, x_3 = 10, x_4 = 6,x_5 = 12, x_6 = 15,x_7 =9, x_8
+=8, x_9 =13, x_{10} = 8~
 
-Med hjälp av `matplotlob` så kan vi plotta tidsserien.
+Med hjälp av [[~matplotlib~][https://matplotlib.org/] så kan vi plotta tidsserien.
 
 #+begin_src python :session
 import matplotlib.pyplot as plt
@@ -40,13 +40,13 @@ plt.show()
 [[https://github.com/henrikfredriksson/matmod/blob/master/material/kmom01/timeseries.png]]
 
 
-Med hjälp av derivatans funktion kan beräkna derivatan i punkt `x_0`
+Med hjälp av derivatans funktion kan beräkna derivatan i punkt ~x_0~
 till en funktion med formeln
 
 [[https://github.com/henrikfredriksson/matmod/blob/master/material/kmom01/derivata.png]]
 
 
-Antag att grafen ovan representerar en funktion `f`, tyvärr så kan vi inte använda derivatans definition för att
+Antag att grafen ovan representerar en funktion ~f~, tyvärr så kan vi inte använda derivatans definition för att
 beräkna för att derivatan eftersom vi inte vet hur
 funktionen ser ut. Det vi använda oss av är numerisk derivering med
 hjälp av /bakåt differenskvot/, /framåt differenskvot/ och /central differenskvot/.
