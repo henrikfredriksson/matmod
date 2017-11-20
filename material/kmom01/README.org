@@ -1,0 +1,158 @@
+#+TITLE: Kmom 01: Introduktion till tidsserieanalys
+#+AUTHOR: Henrik Frediksson och Thomas Sievert
+
+I detta kursmoment så kommer vi gå igenom vad en tidsserie är och hur
+man approximera derivatan för en tidsserie.
+
+En tidsserie är en följd observationer ~y[1], y[2]...,y[T]~ som är ordnade
+efter tiden. Observationen vid tidpunkten ~t~ betecknas med ~y[t]~.
+
+En tidsserie (eng. time series) är alltså en datamängd, som är ordnad
+efter observationstidspunkt. Dessutom så är tidsavståndet från
+datavärde till datavärde (sk. konsekutiva datavärden) lika långt.
+Tidsenheten väljs normalt av den som skapar in datamängden och är
+olika beroende på vilken typ av data som det handlar om. Det är mycket
+vanligt med exempelvis sekund, timme, dygn, vecka, månad, kvartal
+eller år. Tidsavståndet mellan observationerna är alltså konstant, det
+vill säga lika långa konsektutiva tidsperioder.
+
+Exempel på tidsserier är antalet bilar per timme som igenom
+kör förbi BTH, värdet på en viss aktie vid börsstängning och antalet
+studenter årligen antagna till Webbprogammeringsprogrammet.
+
+
+En tidsserie kan i många olika sammanhang bidra till ett
+beslutsunderlag, detta eftersom de effektivt kan beskriva vardagliga
+skeenden och företeelser. Tidsserierna kan efter insamlande enkelt
+analyseras med olika statistiska metoder som normalt beskriver
+intressanta förhållanden och ger möjlighet att studera intressanta
+variationer över tiden.
+
+
+Med hjälp av [[https://matplotlib.org/][matplotlib]] så kan vi plotta en tidsserie.
+
+#+begin_src python :session
+import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np
+from scipy.interpolate import UnivariateSpline
+t = range(1, 24)
+y = [-3, -3, -3, -3, -3, -4, -4, -4, -4, -3, -2, -1, 0, 0, 0, -1, -1, -2, -2, -2, -1, -1, 0]
+
+df = pd.DataFrame({'Observation': t, 'Temperature': y})
+
+spl = UnivariateSpline(t, y, k=5)
+xs = np.linspace(1, 23, 1000)
+
+df.plot(x='Observation',y='Temperature', style='ro-')
+plt.plot(xs, spl(xs), label='Polynomial appoximation')
+plt.legend()
+
+plt.savefig('timeseries.png')
+plt.show()
+
+#+end_src
+
+#+RESULTS:
+: Legend
+
+[[https://github.com/henrikfredriksson/matmod/blob/master/material/kmom01/timeseries.png]]
+
+
+Antag att de röda punkterna i grafen ovan representerar en funktion
+=f= som är temperaturen under en 23 timmars period. Tyvärr så har vi
+inte tillgång till funktionen =f= som matematiskt uttryck och vi
+kan därför inte använda derivatans definition för att för att beräkna
+derivatan. I figuren så har vi försökt approximera funktionen =f= med
+ett 5:e gradspolynom. För att lättare se vad temperaturen är vid olika
+tillfällen så drar vi en linje mellan våra avläsningar. Vi vet helt
+enkelt inte hur funktionen =f= är definierad. Vi kan däremot använda
+oss av en numerisk approximation till derivering som i boken kallas
+för differenskvoter. Fördelen med denna approximation är att den kan
+beräkna hur stor förändringen är från datavärde till nästa datavärde i
+den insamlade dataserien.
+
+Vi ska nu med hjälp av /bakåt differenskvot/, /framåt differenskvot/
+och /central differenskvot/ beräkna derivatan.
+
+Ni hittar information om de olika
+differenskvoter på sidan 213 i Matematik 5000 3c.
+
+Följande videos demonsterar hur man använda differenskvoter för att
+beräkan derivatan numeriskt
+
+[[https://www.youtube.com/watch?v=ZetlczRQtf8][Differenskvoter 1]]
+
+[[https://www.youtube.com/watch?v=O8BihHoIZ-Y&t][Differenskvoter 2]]
+
+
+I [[https://pandas.pydata.org/][pandas]] finns metoden =diff= för datatypen =DataFrame= som returnerar en array
+med element =y[t+1] - y[t]=. Ni kan använda denna metod för att
+jämföra med er egenimplementerade metod från differenskvot framåt.
+ 
+#+begin_src python :session
+
+import matplotlib.pyplot as plt
+import pandas as pd
+
+t = range(1,24)
+y = [-3, -3, -3, -3, -3, -4, -4, -4, -4, -3, -2, -1, 0, 0, 0, -1, -1, -2, -2, -2, -1, -1, 0]
+
+df = pd.DataFrame({'Observation': t, 'Temperature': y})
+
+dt = pd.DataFrame({'Observation': t, 'Derivative': df['Temperature'].diff() })
+dt['Observation'] = df['Observation']
+
+print(dt)
+
+ax1= df.plot(x='Observation', y='Temperature', style='ro-')
+dt.plot(ax=ax1, x='Observation', y='Derivative', style='bo-', secondary_y=False)
+
+plt.grid(True)
+
+plt.savefig('timeseries_derivative.png')
+plt.show()
+#+end_src
+
+#+RESULTS:
+: AxesSubplot(0.125,0.11;0.775x0.77)
+
+[[https://github.com/henrikfredriksson/matmod/blob/master/material/kmom01/timeseries_derivative.png]]
+
+
+* Uppgifter
+Uppgifterna ska redovisas på en webbsida som ni skapar själva och ska
+innehålla följande:
+
+
+1. Hitta en tidsserie som ni vill använda för uppgiften och plotta
+   tidsserien.
+
+2. Ni ska implementera egna metoder för att numeriskt beräkna derivatan
+   med hjälp av framåt-, bakåt- och central differenskvot.
+
+3. Plotta tiddserien med de numeriska derivatorna i samma fönster.
+
+4. Ett /enkelt glidande medelvärde/ (eng. simple moving average)
+   beräknar man genom att beräkna medelvärdet i ett visst tidsintervall
+   (även kallat ett /fönster/). Väljer man fönsterstorleken =2= så kan
+   man beräkna för varje =t=, =y_medel[t] = (y[t] + y[t-1])/2= eller
+   =y_medel[t] = (y[t] + y[t+1])/2=. För ett fönster med storlek så
+   kan det glidande medelvärdet beräknas =y_medel[t] = (y[t+1] +
+   y[t] + y[t-1)/3=.
+
+   För den tidsserie ni valt, så ska ni beräkna ett enkelt glidande
+   medelvärde med olika fönsterstorlek och plotta dessa . 
+
+5. Reflektera över och beskriv vad derivatan för den tidsserie ni valt
+   betyder. Vad är för- och nackdelarna med att använda "genomsnittsfiltret"?
+
+6. Inlämning sker via itslearning där ni ska bifoga länk till den
+   webbsida som ni skapat. Ni ska därefter bedöma en studiekamrats
+   webbsida (tilldelning av bedömning bestäms senare) utifrån följande
+   punkter.
+
+   - Är det tydligt vad tidsserien beskriver?
+   - Framgår det tydligt vad derivatan för tidsserien beskriver?
+   - Verkar beräkningar derivatorna för tidsserien stämma?
+   
