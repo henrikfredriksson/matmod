@@ -21,12 +21,12 @@ kör förbi BTH, värdet på en viss aktie vid börsstängning och antalet
 studenter årligen antagna till Webbprogammeringsprogrammet.
 
 
-En tidsserie är i många olika sammanhang en ett viktigt statistiskt
-begrepp, eftersom de effektivt kan beskriva vardagliga skeenden och
-företeelser. Tidsserierna kan efter insamlande enkelt analyseras med
-olika statistiska metoder som normalt beskriver intressanta
-förhållanden och ger möjlighet att studera intressanta variationer
-över tiden.
+En tidsserie kan i många olika sammanhang bidra till ett
+beslutsunderlag, detta eftersom de effektivt kan beskriva vardagliga
+skeenden och företeelser. Tidsserierna kan efter insamlande enkelt
+analyseras med olika statistiska metoder som normalt beskriver
+intressanta förhållanden och ger möjlighet att studera intressanta
+variationer över tiden.
 
 
 Med hjälp av [[https://matplotlib.org/][matplotlib]] så kan vi plotta en tidsserie.
