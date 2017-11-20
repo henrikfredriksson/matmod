@@ -36,20 +36,19 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 from scipy.interpolate import UnivariateSpline
-t = range(1,24)
-y = [-3,-3,-3,-3,-3,-4,-4,-4,-4,-3,-2,-1,0,0,0,-1,-1,-2,-2,-2,-1,-1,0]
+t = range(1, 24)
+y = [-3, -3, -3, -3, -3, -4, -4, -4, -4, -3, -2, -1, 0, 0, 0, -1, -1, -2, -2, -2, -1, -1, 0]
 
 df = pd.DataFrame({'Observation': t, 'Temperature': y})
 
-spl = UnivariateSpline(t,y, k=5)
+spl = UnivariateSpline(t, y, k=5)
 xs = np.linspace(1, 23, 1000)
 
-df.plot(x='Observation',y='Temperature', style = 'ro-')
-plt.plot(xs,spl(xs), label='Polynomial appoximation')
+df.plot(x='Observation',y='Temperature', style='ro-')
+plt.plot(xs, spl(xs), label='Polynomial appoximation')
 plt.legend()
 
 plt.savefig('timeseries.png')
-
 plt.show()
 
 #+end_src
@@ -97,7 +96,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 t = range(1,24)
-y = [-3,-3,-3,-3,-3,-4,-4,-4,-4,-3,-2,-1,0,0,0,-1,-1,-2,-2,-2,-1,-1,0]
+y = [-3, -3, -3, -3, -3, -4, -4, -4, -4, -3, -2, -1, 0, 0, 0, -1, -1, -2, -2, -2, -1, -1, 0]
 
 df = pd.DataFrame({'Observation': t, 'Temperature': y})
 
@@ -107,7 +106,7 @@ dt['Observation'] = df['Observation']
 print(dt)
 
 ax1= df.plot(x='Observation', y='Temperature', style='ro-')
-dt.plot(ax=ax1, x='Observation' ,y='Derivative', style='bo-',secondary_y=False)
+dt.plot(ax=ax1, x='Observation', y='Derivative', style='bo-', secondary_y=False)
 
 plt.grid(True)
 
