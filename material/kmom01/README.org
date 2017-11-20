@@ -47,7 +47,8 @@ för att beräkna derivatan eftersom vi inte vet hur
 funktionen är definierad. Det vi kan använda oss av är numerisk
 derivering. Vi ska med
 hjälp av /bakåt differenskvot/, /framåt differenskvot/ och /central
-differenskvot/ beräkna derivatan.
+differenskvot/ beräkna derivatan. Ni hittar information om olika
+differenskvote på sidan 213 i Matematik 5000 3c.
 
 Följande videos demonsterar hur man använda differenskvoter för att
 beräkan derivatan numeriskt
@@ -58,7 +59,8 @@ beräkan derivatan numeriskt
 
 
 I [[https://pandas.pydata.org/][pandas]] finns metoden =diff= för datatypen =DataFrame= som returnerar en array
-med element =x[t+1] - x[t]=.
+med element =x[t+1] - x[t]=. Ni kan använda denna metod för att
+jämföra med er metod.
  
 #+begin_src python :session
 import matplotlib.pyplot as plt
