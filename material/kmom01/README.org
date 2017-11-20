@@ -134,7 +134,7 @@ innehålla följande:
 3. Plotta tiddserien med de numeriska derivatorna i samma fönster.
 
 4. Ett /enkelt glidande medelvärde/ (eng. simple moving average)
-   beräknar man genom att beräkna medelvärdet i ett visst tidsintevall
+   beräknar man genom att beräkna medelvärdet i ett visst tidsintervall
    (även kallat ett /fönster/). Väljer man fönsterstorleken =2= så kan
    man beräkna för varje =t=, =y_medel[t] = (y[t] + y[t-1])/2= eller
    =y_medel[t] = (y[t] + y[t+1])/2=. För ett fönster med storlek så
