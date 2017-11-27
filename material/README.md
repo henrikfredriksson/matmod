@@ -8,6 +8,5 @@ Here are various written course material, exercises and reading material.
 
 | Moment | Slides | Video |
 |---|---|---|
-Inledande statistik | [slides](01-inledandestatistik.org) |
-[video](https://youtu.be/3X6psM3HSm4)
+Inledande statistik | [slides](01-inledandestatistik.org) | [video](https://youtu.be/3X6psM3HSm4)
 |---|---|---|
