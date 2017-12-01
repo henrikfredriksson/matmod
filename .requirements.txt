@@ -1,5 +1,12 @@
 pylint >= 1.4.4
 sympy
+
+# studserver
+# sudo python3 -m pip install sympy
+# sudo python3 -m pip install numpy
+# sudo python3 -m pip install scipy
+# sudo apt-get install python3-matplotlib
+
 #coverage
 #flake8
 #flake8-docstrings
