@@ -12,7 +12,8 @@ Bedömningen av hemsidan, ska mailas till sidansvarig med cc till henrik.fredrik
 |[Magnus Greiff](http://www.student.bth.se/~magp16/dbwebb-kurser/matmod/me/uppgift1/uppgift1.html)|Magnus Andersson|
 |[André  Johansson](http://andremartinj.pythonanywhere.com/)|Alexey Vorobyev|
 |[Ara Nour Bakhsh](http://www.student.bth.se/~arno16/dbwebb-kurser/matmod/me/uppgift1/)|Olof Enström |
-|[Peder Tornberg](http://www.student.bth.se/~peto16/dbwebb-kurser/matmod/me/uppgift1/app.cgi/)|Peder Tornberg|
+|[Anders Nygren](www.student.bth.se/~anng15/dbwebb-kurser/matmod/me/redovisa/server/app.cgi/) | Peder Tornberg
+|[Peder Tornberg](http://www.student.bth.se/~peto16/dbwebb-kurser/matmod/me/uppgift1/app.cgi/)| Anders Nygren|
 |[Alexey Vorobye](http://80.78.218.152:1338/)|André Johansson|
 |[Ylva Wright](http://www.student.bth.se/~ylwr15/dbwebb-kurser/matmod/me/uppgift1)|Martin Fagerlund|
 
