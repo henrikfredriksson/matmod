@@ -11,7 +11,7 @@ Lösningstips till övningar i Statisk Dataanalys (4:e upplagan) finns [här](ht
 |---|---|---|
 Summor |[slides](https://github.com/dbwebb-se/matmod/blob/master/material/MA1477_summor.pdf)| [video](https://www.youtube.com/watch?v=uuhRWlhxU6o)
 Inledande statistik | [slides](01-inledandestatistik.org) |[video](https://youtu.be/3X6psM3HSm4)
-Sannolikhetsbegreppet | [slides](02-sannolikhetsbegreppet) |[video](https://www.youtube.com/watch?v=erxl3ClD_vM)
-Slumpförsök med två händelser | [slides](03-slumptvahandelser) |[video](https://www.youtube.com/watch?v=jkPvwaiUfl0)
-Betingad sannolikhet och oberoende händelser|[slides](04-betingadsannolikhet) | [video](https://youtu.be/fRDJT1H93Jc)
+Sannolikhetsbegreppet | [slides](02-sannolikhetsbegreppet.org) |[video](https://www.youtube.com/watch?v=erxl3ClD_vM)
+Slumpförsök med två händelser | [slides](03-slumptvahandelser.org) |[video](https://www.youtube.com/watch?v=jkPvwaiUfl0)
+Betingad sannolikhet och oberoende händelser|[slides](04-betingadsannolikhet.org) | [video](https://youtu.be/fRDJT1H93Jc)
 |---|---|---|
