@@ -2,7 +2,6 @@
 
 Bedömningen av hemsidan, ska mailas till sidansvarig med cc till henrik.fredriksson@bth.se
 
-|---|---|
 |Hemsida | Bedöms av|
 |---|---|
 |(Magnus Andersson)[http://magnusandersson.pythonanywhere.com/] | Magnus Greiff|
