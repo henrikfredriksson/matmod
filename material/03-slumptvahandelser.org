@@ -1,0 +1,68 @@
+#+TITLE: MA1477 Matematisk modellering \newline Slumpförsök med två händelser
+#+AUTHOR: Henrik Fredriksson
+#+EMAIL: henrik.fredriksson@bth.se
+#+startup: beamer
+#+options: toc:nil
+#+LaTeX_CLASS: beamer
+#+BEAMER_THEME: Boadilla
+#+LATEX_HEADER: \institute[]{Blekinge Tekniska Högskola}
+#+LATEX_HEADER: \usepackage{tikz}
+#+LATEX_HEADER: \usepackage[swedish]{babel}
+
+
+* Slumpförsök med två händelser
+
+I ett slumpförsök med flera händelser så kan detta leda många frågeställningar.
+
+#+BEAMER: \pause
+
+Betrakta slumpförsöket med kast med två tärningar så vi t.ex
+att
+
+$A$ är händelsen "summan av tärningarna är minst 10" och $B$ är
+händelsen "ingen av tärningarna är en sexa".
+
+- Vad är sannolikheten att båda $A$ och $B$ inträffar?
+- Vad är sannolikheten att bara $A$ inträffar?
+- Vad är sannolikheten exakt en händelserna $A$ och $B$ inträffar?
+
+#+BEAMER: \pause
+
+* Sannolikhetslärans additionssats
+Om $A$ och $B$ är två händelser som kan inträffa vid är slumpförsök så
+är sannolikheten att minst en av händelserna inträffar
+\[
+\Pr(A \cup B) = \Pr{(A)} + \Pr{(B)} - \Pr(A\cap B)
+\]
+
+I summan $\Pr{(A)} + \Pr{(B)}$ så har sannolikheten för utfallet
+$A\cap B$ räknats två gånger, därför måste vi subtrahera $\Pr(A\cap
+B)$.
+
+* Exempel
+
+Antag att vi kastar en blå tärning och en grön tärning och vi studerar
+sannoliketen för händelsen $A\cup B$, där $A$ händelsen är "blå
+tärning är en femma" och $B$ är händelsen "grön tärning är en sexa"
+
+
+
+Vi har att
+\[
+\Pr(A\cup B) = \Pr{(A)} + \Pr{(B)} - \Pr(A\cap B) = \frac{1}{6} +
+\frac{1}{6} - \frac{1}{36} = \frac{11}{36}.
+\]
+
+Sannolikheten för att $A$ eller $B$ inträffar är alltså ca $31\%$
+
+
+*  Exempel (fortsättning)
+
+Med komplementregeln så kan vi beräkna $\Pr(A\cup B)$ enligt
+\[
+\Pr(A\cup B) = 1 - \Pr(\bar{A} \cap \bar{B})
+\]
+
+eller i ord Pr(minst en händelse) = 1 - Pr(ingen händelse)
+
+
