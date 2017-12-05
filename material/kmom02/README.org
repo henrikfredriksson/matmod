@@ -56,7 +56,7 @@ att en slumpvis vald punkt inuti rektangeln ligger under grafen =y = f(x)=
 - Välj =n= punkter slumpvis som ligger inuti boxen.
 - Beräkna antalet punkter som ligger under grafen =y = f(x)=. Beteckna detta tal
   med =m=
-- Då =n= växer så gäller det att =m/n= går mot =Pr(I))=
+- Då =n= växer så gäller det att =m/n= går mot =Pr(U)=
 
 I figuren nedan är 200 slumpvis valda punkter plottade. De blå
 punkterna ligger under grafen och de oranga ligger över grafen.
