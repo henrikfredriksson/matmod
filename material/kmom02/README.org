@@ -1,6 +1,9 @@
 #+TITLE: Kmom 02: Monte Carlo metoden och Centrala gränsvärdessatsen
 #+AUTHOR: Henrik Frediksson och Thomas Sievert
 
+
+* Monte-Carlo metoden
+
 I detta kursmoment så kommer vi gå igenom hur man kan uppskatta
 integraler.
 
@@ -8,7 +11,6 @@ Om =f(x)= är en funktion som är icke-negativ på intervallet =[a,b]= så
 kan vi beräkna arean =A= av området mellan funktion och =x=-axeln med
 integralen
 
-#+ATTR_ORG: :width 400
 [[integral.png]]
 
 där =F(x)= uppfyller =F'(x) = f(x)=
@@ -22,7 +24,7 @@ intervallet =[a,b]=. Då gäller det att
 
 [[integral_est.png]]
 
-dvs arena =A= är mindre än arean av den box som innesluter omsluter området
+dvs arean =A= är mindre än arean av den box som innesluter omsluter området
 
 #+begin_src python :session
 import numpy as np
@@ -50,7 +52,7 @@ plt.show()
 [[area.png]]
 
 Monte-Carlo metoden fungerar på följande sätt. Låt =A= vara händelsen
-att en slumpvis vald punkt ligger under grafen =y = f(x)
+att en slumpvis vald punkt ligger under grafen =y = f(x)=
 - Välj =n= punkter slumpvis som ligger inuti boxen.
 - Beräkna antalet punkter som ligger under grafen =y = f(x)=. Beteckna detta tal
   med =m=
@@ -58,7 +60,25 @@ att en slumpvis vald punkt ligger under grafen =y = f(x)
 
 [[montecarlo.png]]
 
-
 Vi kan nu uppskatta integralen enligt
 
-[[approximation.png]
+[[approximation.png]]
+
+
+* Upgifter
+
+Ni ska skapa en sida 
+
+1. Välj en funktion =f(x)= och ett intervall =[a,b]= sådan att =f(x)
+   >= 0= in intervallet =[a,b]=
+2. Plotta grafen =y = f(x)= i intervallet =[a,b]=
+3. Använd Monte-Carlo metoden för att beräkna arean av området mellan
+   =x=-axeln och kurvan för olika värden =n= .
+4. För varje värde på =n=, plotta de slumpade punkterna i ny figur
+   tilsammans med grafen =y=. I figuren ska det framgå
+   vilka av punkterna som ligger under grafen och vilka som ligger över
+
+5. Avgör med hjälp av Monte-Carlo metoden ett värde på arean.
+
+
+* Centrala gränsvärdensatsen
