@@ -76,7 +76,7 @@ grafen så kan uppskatta integralen enligt
 Ni ska skapa en sida där följande ska ingå.
 
 1. Välj en funktion =f(x)= och ett intervall =[a,b]= sådan att =f(x)
-   => 0= in intervallet =[a,b]=
+   => 0= i intervallet =[a,b]=
 2. Plotta grafen =y = f(x)= i intervallet =[a,b]=
 3. Använd Monte-Carlo metoden för att beräkna arean av området mellan
    =x=-axeln och kurvan för olika stora värden =n= (3-4 stycken).
