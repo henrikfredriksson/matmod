@@ -1,0 +1,154 @@
+#+TITLE: MA1477 Matematisk modellering \newline Sannolikhetsbegreppet
+#+AUTHOR: Henrik Fredriksson
+#+EMAIL: henrik.fredriksson@bth.se
+#+startup: beamer
+#+options: toc:nil
+#+LaTeX_CLASS: beamer
+#+BEAMER_THEME: Boadilla
+#+LATEX_HEADER: \institute[]{Blekinge Tekniska Högskola}
+#+LATEX_HEADER: \usepackage{tikz}
+#+LATEX_HEADER: \usepackage[swedish]{babel}
+
+
+* Slumpförsök
+
+Inom sannolikhetsläran så används ofta /slumpmodeller/ för att
+beskriva /slumpförsök/.
+
+#+BEAMER: \pause
+
+- Slumpmässigt välja 200000 personer i Sverige och ta reda på hur
+  många som skulle rösta på ett visst politiskt parti idag.
+- Kasta 50 tärningar och se vad summan av tärningarna blir.
+- Köpa en trisslott och notera om vi vinner eller inte.
+#+BEAMER: \pause
+
+När vi utför slumpförsök så kan vi på förhand inte förutse utfallet
+trots att vi vet förutsättningarna.
+
+* Utfallsrum
+
+Mängden av de möjliga utfallen är försöket utfallsrum.
+
+#+BEAMER: \pause
+
+** Olika utfallsrum
+
+Exemplen ovan har så kallade /diskreta utfallrum/. Det är i samtliga
+försök möjligt att räkna upp alla utfallen.
+
+Om ufallsrummet är ett eller flera intervall så kallas det för ett
+/kontinuerliga utfallsrum/.
+
+#+BEAMER: \pause
+
+Allmänt kan man beskriva ett diskret utfallsrum $S$ med $N$ utfall som
+\[
+S = \{e_1,e_2, \ldots ,e_N \}
+\]
+
+där $e_1, e_2,\ldots e_N$ är olika utfall.
+
+
+* Händelse
+
+Ett försök med kast av tärning har utfallsrummet
+\[
+S = \{1,2,3,4,5,6 \}.
+\]
+
+Om vi till exempel studerar händelsen "udda värde" inträffar så är de
+gynnsamma utfall $1,3,5$. En händelse är alltså en delmängd av
+utfallsrummet.
+
+
+
+* Notation
+Antag att $A$ och $B$ är två händelser som kan inträffa för ett
+slumpförsök. Repetition $\bar{A}$ ($A$ -komplement) är "inte A".
+
+#+BEGIN_LATEX
+\begin{center}
+\begin{tabular}{|c|r|}
+\hline
+Uttryck & Tolkning \\
+\hline
+$A \cup B$ & "minst en av händelserna" \\
+$A \cap B$ & "båda händelserna" \\
+$A \cap \bar{B}$ & "enbart händelsen $A$" \\
+$\bar{A} \cap \bar{B}$ & "ingen av händelserna" \\
+$(A\cap \bar{B}) \cup (\bar{A} \cap B) $ & "exakt en av händelserna" \\
+\hline
+\end{tabular}
+\end{center}
+#+END_LATEX
+
+
+
+* Sannolikheten för en händelse
+
+En tentamen i matematik innhåller 5 uppgifter. Sammanställning av resultatet från
+tentamen kan beskrivas med följande tabell
+
+#+BEGIN_LATEX
+\begin{center}
+\begin{tabular}{|r|c|c|c|c|c|c|}
+\hline
+\textbf{Antal rätt} & 0&1&2&3&4&5 \\
+\hline
+\textbf{Relativ frekvens} &0.1&0.2&0.3&0.2&0.1&0.1 \\
+\hline
+\end{tabular}
+\end{center}
+#+END_LATEX
+
+#+BEAMER: \pause
+Notera att summan av de relativa frekvenserna är $1$.
+
+Låt $A$ vara händelsen att vi väljer en student som skrev tentan
+slumpmässigt. Vad är sannoliketen att den utvalde studenten hade minst
+3 rätt på tentan?
+
+#+BEAMER: \pause
+Sannolikheterna är inte samma för de olika utfallen $(0,1,\ldots, 5)$. Vi kan inte använda den klassiska går
+inte att använda.
+
+#+BEAMER: \pause
+Mer rimligt att betrakta summan av de relativa frekvenserna för
+händeslen (3,4 eller 5 rätt). Alltså
+\[
+\Pr(A) = 0.2+0.1+0.1 = 0.4
+\]
+
+* Elemetarsannolikheter
+I ett slumpförsök med utfallsrummet $S = \{e_1,e_2, \ldots ,e_N \}$
+motsvarar varje utfall $e_i$ av ett tal $\Pr(e_i)$. Talen $\Pr(e_i)$
+kallas /elementarsannolikheter/ och uppfyller
+\[
+\Pr(e_i) \geq 0
+\]
+och
+\[
+\sum_{e_i \in S} \Pr(e_i) = \Pr(e_1) + \Pr(e_2) + \ldots + \Pr(e_N) = 1
+\]
+
+* Sannolikheten för en händelse
+
+En händelse $A$ är en delmängd av utfallsrummet. Sannolikheten för
+denna händelse är summan av elementarsannolikheterna för de utfall som
+gör att händelsen inträffar, dvs
+\[
+\Pr(A) = \sum_{e_i \in A} \Pr(e_i)
+\]
+#+BEAMER: \pause
+
+Det följer att
+\[
+0 \leq \Pr(A) \leq 1
+\]
+
+\[
+\Pr(\bar{A}) = 1 - \Pr(A) \quad \text{eller} \quad \Pr(A) = 1 - \Pr(\bar{A})
+\]
+#+BEAMER: \pause
+Detta känns ifrån den klassiska sannolikhetsdefinitionen.

@@ -16,12 +16,12 @@ def main():
     This is the main method, I call it main by convention.
     """
 
-    dice_rolls = 1000
+    dice_rolls = 10000
     rel_freq = []
     cumulative_value = 0
-    
+
     for i in range(1, dice_rolls):
-        value = np.random.randint(1, 6)
+        value = np.random.randint(1, 7)
         cumulative_value = cumulative_value + value
         rel_freq.append(cumulative_value/i)
 

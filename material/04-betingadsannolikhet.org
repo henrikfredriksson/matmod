@@ -1,0 +1,143 @@
+#+TITLE: MA1477 Matematisk modellering \newline Betingad sannolikhet och oberoende händelser
+#+AUTHOR: Henrik Fredriksson
+#+EMAIL: henrik.fredriksson@bth.se
+#+OPTIONS: toc:nil
+#+startup: beamer
+#+LaTeX_CLASS: beamer
+#+BEAMER_THEME: Boadilla
+#+LATEX_HEADER: \institute[]{Blekinge Tekniska Högskola}
+#+LATEX_HEADER: \usepackage{tikz}
+#+LATEX_HEADER: \usepackage[swedish]{babel}
+
+* Betingade sannolikheter
+
+Hur förändras en sannolikhet för en händelse $A$ om vi vet att
+händelse $B$ har inträffat?
+
+#+BEAMER: \pause
+
+Sannolikheten för att man ser en onykter person på stan en kväll beror
+på vilken veckodag det är.
+
+#+BEAMER: \pause
+
+Sannolikheten för att en slumpvis vald person har gjort lumpen
+beror på om personen är en man eller kvinna.
+
+
+* Exempel
+
+I en undersökning så har man frågat 789 personer om de tänkt kolla på
+Kalle Anka på julafton. Resultatet gav följande tabell
+
+#+BEAMER: \pause
+
+| Kalle Anka tittare | Man | Kvinna | Summa | 
+|--------------------+-----+--------+-------+ 
+| Ja                 | 152 |    328 |   480 | 
+| Nej                | 245 |     64 |   309 | 
+|--------------------+-----+--------+-------+ 
+| Summa              | 397 |    392 |   789 | 
+
+#+BEAMER: \pause
+
+Försöket är att på slump välja en tillfrågade personerna. Om $A$ är händelsen "Kalle Anka tittare" och $B$
+är händelsen "är en man", så gav undersökningen att 
+\[
+\Pr(A) = \frac{480}{789} \approx 0.61,\quad \Pr(B) = \frac{397}{789} \approx 0.5
+\]
+\[
+\Pr(A \cap B) = \frac{152}{789} \approx 0.19
+\]
+
+
+#+BEAMER: \pause
+
+Vad är då sannolikheten att en person ska titta på Kalle Anka /under
+förutsättning/ att den tillfrågade personen är man?
+
+Sannolikheten för $A$ /givet/ B betecknas med $\Pr(A|B)$.
+
+
+* Exempel (fortsättning)
+Vi hade sannolikheterna
+\[
+\Pr(A) = \frac{480}{789} \approx 0.61, \Pr(B) = \frac{397}{789} \approx
+0.5, \Pr(A \cap B) = \frac{152}{789} \approx 0.19
+\]
+
+
+
+Av de 397 tillfrågade männen så tänker 152 kolla på Kalle Anka, dvs
+\[
+\Pr(A | B ) = \frac{152}{397} \approx 0.38
+\]
+#+BEAMER: \pause
+Men detta kan även skrivas som
+\[
+\Pr(A | B ) = \frac{152}{397} = \frac{152/789}{397/789} =
+\frac{\Pr(A\cap B)}{\Pr(B)}
+\]
+
+* Betingad sannolikhet 
+
+Den betingade sannolikheten får att händelsen $A$ under förutsättning
+att händelsen $B$ inträffar är
+\[
+\Pr(A | B ) = \frac{\Pr(A\cap B)}{\Pr(B)}
+\]
+
+där $\Pr(B) > 0$.
+#+BEAMER: \pause
+Från definitinen av betingad sannolikhet följer följande sats
+
+** Sannolikhetslärans multiplikationssats
+Om $A$ och $B$ är två händelser som kan inträffa vid ett slumpförsök
+så gäller det att
+\[
+\Pr(A\cap B) = \Pr(B)\cdot \Pr(A|B)
+\]
+
+* Exempel
+
+Vi ska dra två kort ur en kortlek. Vad är sannolikheten att vi drar
+två kungar. Här är $A$ och $B$ händelserna att det första respektive
+andra kortet är en kung. Sannolikheten blir
+
+\[
+\Pr(A\cap B ) = \Pr(B)\cdot \Pr(B|A) = \frac{4}{52}\cdot \frac{3}{51}
+= 0.0045
+\]
+ 
+
+* Oberoende händelser
+
+Antag att vi ska singla slant två gånger. Betrakta händelserna A
+"krona" och $B$ "krona". Vad är den betingade sannolikheten att att vi får en
+krona vid andra slantsinglingen givet att första gav en krona?
+
+#+BEAMER: \pause
+Vi har att
+\[
+\Pr(B|A) = \frac{\Pr(A\cap B)}{\Pr{(A)}} = \frac{0.25}{0.5} = 0.5
+\]
+#+BEAMER: \pause
+
+Men detta är ju sannolikheten för att singla en slant och få krona!
+
+Rent intuitivt så inser vi att den andra slantsinglingen inte beror på
+vad den första blev, med andra ord $B$ är /oberoende/ av $A$.
+
+
+Mer formellt:
+
+** Oberoende händelser
+Om $\Pr(B|A) = \Pr(B)$ så är händelsen $B$ oberoende av händelsen $A$.
+
+Från detta följer multiplikationssatsen för oberoende händelser
+
+** multiplikationssatsen för oberoende händelser
+Om $A$ och $B$ är två oberoende händelser så gäller det att
+\[
+\Pr(A\cap B) = \Pr(A)\cdot \Pr(B)
+\]
