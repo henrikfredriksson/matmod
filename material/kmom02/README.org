@@ -24,7 +24,9 @@ intervallet =[a,b]=. Då gäller det att
 
 [[integral_est.png]]
 
-dvs arean =A= är mindre än arean av den rektangel som innesluter omsluter området
+dvs arean =A= är mindre än arean av den rektangel som innesluter
+omsluter området. Följane kodexempel illutsterar hur en rektangel
+innsluter en kurva i intervallet =[0,4]=.
 
 #+begin_src python :session
 import numpy as np
@@ -53,7 +55,7 @@ plt.show()
 
 Monte-Carlo metoden fungerar på följande sätt. Betrakta händelsen =I=
 att en slumpvis vald punkt inuti rektangeln ligger under grafen =y = f(x)=
-- Välj =n= punkter slumpvis som ligger inuti boxen.
+- Generera =n= punkter slumpvis som ligger inuti rektangeln.
 - Beräkna antalet punkter som ligger under grafen =y = f(x)=. Beteckna detta tal
   med =m=
 - Då =n= växer så gäller det att =m/n= går mot =Pr(U)=
@@ -64,7 +66,7 @@ punkterna ligger under grafen och de oranga ligger över grafen.
 [[montecarlo.png]]
 
 När vi vet sannolikheten för att en slumpvis vald punkt ligger under
-grafen Vi kan nu uppskatta integralen enligt
+grafen så kan uppskatta integralen enligt
 
 [[approximation.png]]
 
@@ -85,4 +87,22 @@ Ni ska skapa en sida där följande ska ingå.
 5. Avgör med hjälp av Monte-Carlo metoden ett värde på arean.
 
 
-* Centrala gränsvärdensatsen
+* Centrala gränsvärdessatsen
+
+Centrala gränsvärdessatsen säger att =n= oberoende slumpvariabler med
+samma fördelning är ungefär normalfördelad om =n= är tillräckligt
+stort. Om =X_1, X_2, X_n= är oberoende slumpvariabler så gäller det 
+
+=Y = X_1 + X_2 + ... X_n=
+
+är approximativt normalfördelad.
+
+Exempel försök med oberoende slumpvariabler är att kasta ett stort
+antal tärningar och notera summan av tärningarna.
+
+** Uppgift
+
+1. Ni ska välja en slumpmodell med oberoende slumpvariabler
+2. Genomför ett stort antal försök av slumpmodellen och spara utfallen.
+2. Plotta ett [histogram[(https://sv.wikipedia.org/wiki/Histogram) av
+   försökens utfall.
