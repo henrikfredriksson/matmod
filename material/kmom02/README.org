@@ -8,6 +8,7 @@ Om =f(x)= är en funktion som är icke-negativ på intervallet =[a,b]= så
 kan vi beräkna arean =A= av området mellan funktion och =x=-axeln med
 integralen
 
+#+ATTR_ORG: :width 400
 [[integral.png]]
 
 där =F(x)= uppfyller =F'(x) = f(x)=
@@ -60,4 +61,4 @@ att en slumpvis vald punkt ligger under grafen =y = f(x)
 
 Vi kan nu uppskatta integralen enligt
 
-[[approx.png]]
+[[approximation.png]
