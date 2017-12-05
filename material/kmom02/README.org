@@ -2,7 +2,7 @@
 #+AUTHOR: Henrik Frediksson och Thomas Sievert
 
 
-* Monte-Carlo metoden
+* Monte Carlo-metoden
 
 I detta kursmoment så kommer vi gå igenom hur man kan uppskatta
 integraler.
@@ -53,7 +53,7 @@ plt.show()
 
 [[area.png]]
 
-Monte-Carlo metoden fungerar på följande sätt. Betrakta händelsen =U=
+Monte Carlo-metoden fungerar på följande sätt. Betrakta händelsen =U=
 att en slumpvis vald punkt inuti rektangeln ligger under grafen =y = f(x)=
 - Generera =n= punkter slumpvis som ligger inuti rektangeln.
 - Beräkna antalet punkter som ligger under grafen =y = f(x)=. Beteckna detta tal
@@ -78,13 +78,13 @@ Ni ska skapa en sida där följande ska ingå.
 1. Välj en funktion =f(x)= och ett intervall =[a,b]= sådan att =f(x)
    => 0= i intervallet =[a,b]=
 2. Plotta grafen =y = f(x)= i intervallet =[a,b]=
-3. Använd Monte-Carlo metoden för att beräkna arean av området mellan
+3. Använd Monte Carlo-metoden för att beräkna arean av området mellan
    =x=-axeln och kurvan för olika stora värden =n= (3-4 stycken).
 4. För varje värde på =n=, plotta de slumpade punkterna i ny figur
    tilsammans med grafen =y=. I figuren ska det framgå
    vilka av punkterna som ligger under grafen och vilka som ligger över
 
-5. Avgör med hjälp av Monte-Carlo metoden ett värde på arean för området mellan
+5. Avgör med hjälp av Monte Carlo-metoden ett värde på arean för området mellan
    kurvan och =x=-axeln i intervallet =[a,b]=.
 
 
@@ -98,8 +98,11 @@ stort. Om =X_1, X_2, X_n= är oberoende slumpvariabler så gäller det
 
 är approximativt normalfördelad.
 
-Exempel på försök med oberoende slumpvariabler är att kasta ett stort
-antal tärningar och notera summan av tärningarna.
+Exempel på försök med oberoende slumpvariabler är att kasta ett stort fixerat
+antal tärningar och notera summan av tärningarna. Om man genomför
+detta slumpförsök många gånger så kommer summan av tärningarna vara normalfördelad.
+
+
 
 ** Uppgifter
 
