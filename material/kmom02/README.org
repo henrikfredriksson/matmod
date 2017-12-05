@@ -16,7 +16,7 @@ Dock så är det inte alltid möjligt att finna =F(x)= så att vi kan
 beräkna integralen.
 
 /Monte Carlo/-metoden är en probilistisk metods som uppskattar värdet
-på en integral. Låt `c` vara det största funktionsvärdet av =f(x)= på
+på en integral. Låt =c= vara det största funktionsvärdet av =f(x)= på
 intervallet =[a,b]=. Då gäller det att
 
 [[integral_est.png]]
@@ -33,8 +33,6 @@ b = 4
 x = np.linspace(a,b,1000)
 y = np.absolute(x*np.exp(-np.sin(x)**2))
 
-
-
 plt.plot(x, y)
 
 currentAxis = plt.gca()
@@ -50,5 +48,16 @@ plt.show()
 
 [[area.png]]
 
+Monte-Carlo metoden fungerar på följande sätt. Låt =A= vara händelsen
+att en slumpvis vald punkt ligger under grafen =y = f(x)
+- Välj =n= punkter slumpvis som ligger inuti boxen.
+- Beräkna antalet punkter som ligger under grafen =y = f(x)=. Beteckna detta tal
+  med =m=
+- Då =n= växer så gäller det att =m/n= går mot =Pr(A)=
 
 [[montecarlo.png]]
+
+
+Vi kan nu uppskatta integralen enligt
+
+[[approx.png]]
