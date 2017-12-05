@@ -1,0 +1,54 @@
+#+TITLE: Kmom 02: Monte Carlo metoden och Centrala gränsvärdessatsen
+#+AUTHOR: Henrik Frediksson och Thomas Sievert
+
+I detta kursmoment så kommer vi gå igenom hur man kan uppskatta
+integraler.
+
+Om =f(x)= är en funktion som är icke-negativ på intervallet =[a,b]= så
+kan vi beräkna arean =A= av området mellan funktion och =x=-axeln med
+integralen
+
+[[integral.png]]
+
+där =F(x)= uppfyller =F'(x) = f(x)=
+
+Dock så är det inte alltid möjligt att finna =F(x)= så att vi kan
+beräkna integralen.
+
+/Monte Carlo/-metoden är en probilistisk metods som uppskattar värdet
+på en integral. Låt `c` vara det största funktionsvärdet av =f(x)= på
+intervallet =[a,b]=. Då gäller det att
+
+[[integral_est.png]]
+
+dvs arena =A= är mindre än arean av den box som innesluter omsluter området
+
+#+begin_src python :session
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.patches import Rectangle
+
+a = 0
+b = 4
+x = np.linspace(a,b,1000)
+y = np.absolute(x*np.exp(-np.sin(x)**2))
+
+
+
+plt.plot(x, y)
+
+currentAxis = plt.gca()
+currentAxis.add_patch(Rectangle((0, 0), 4, 3.22, facecolor="blue", alpha = 0.1))
+plt.savefig('area.png')
+plt.grid(True)
+plt.show()
+
+#+end_src
+
+#+RESULTS:
+: Rectangle(xy=(0, 0), width=4, height=3.22, angle=0)
+
+[[area.png]]
+
+
+[[montecarlo.png]]
