@@ -25,7 +25,7 @@ intervallet =[a,b]=. Då gäller det att
 [[integral_est.png]]
 
 dvs arean =A= är mindre än arean av den rektangel som innesluter
-omsluter området. Följane kodexempel illutsterar hur en rektangel
+omsluter området. Följande kodexempel illusterar hur en rektangel
 innsluter en kurva i intervallet =[0,4]=.
 
 #+begin_src python :session
@@ -98,12 +98,12 @@ stort. Om =X_1, X_2, X_n= är oberoende slumpvariabler så gäller det
 
 är approximativt normalfördelad.
 
-Exempel försök med oberoende slumpvariabler är att kasta ett stort
+Exempel på försök med oberoende slumpvariabler är att kasta ett stort
 antal tärningar och notera summan av tärningarna.
 
 ** Uppgift
 
 1. Ni ska välja en slumpmodell med oberoende slumpvariabler
 2. Genomför ett stort antal försök av slumpmodellen och spara utfallen.
-2. Plotta ett [histogram](https://sv.wikipedia.org/wiki/Histogram) av
+2. Plotta ett (histogram)[https://sv.wikipedia.org/wiki/Histogram] av
    försökens utfall.
