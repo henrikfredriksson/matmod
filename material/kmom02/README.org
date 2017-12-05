@@ -18,13 +18,13 @@ där =F(x)= uppfyller =F'(x) = f(x)=
 Dock så är det inte alltid möjligt att finna =F(x)= så att vi kan
 beräkna integralen.
 
-/Monte Carlo/-metoden är en probilistisk metods som uppskattar värdet
+/Monte Carlo/-metoden är en probabilistisk metod som uppskattar värdet
 på en integral. Låt =c= vara det största funktionsvärdet av =f(x)= på
 intervallet =[a,b]=. Då gäller det att
 
 [[integral_est.png]]
 
-dvs arean =A= är mindre än arean av den box som innesluter omsluter området
+dvs arean =A= är mindre än arean av den rektangel som innesluter omsluter området
 
 #+begin_src python :session
 import numpy as np
@@ -52,7 +52,7 @@ plt.show()
 [[area.png]]
 
 Monte-Carlo metoden fungerar på följande sätt. Låt =A= vara händelsen
-att en slumpvis vald punkt ligger under grafen =y = f(x)=
+att en slumpvis vald punkt inuti rektangeln ligger under grafen =y = f(x)=
 - Välj =n= punkter slumpvis som ligger inuti boxen.
 - Beräkna antalet punkter som ligger under grafen =y = f(x)=. Beteckna detta tal
   med =m=
