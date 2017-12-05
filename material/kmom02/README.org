@@ -105,5 +105,5 @@ antal tärningar och notera summan av tärningarna.
 
 1. Ni ska välja en slumpmodell med oberoende slumpvariabler
 2. Genomför ett stort antal försök av slumpmodellen och spara utfallen.
-2. Plotta ett (histogram)[https://sv.wikipedia.org/wiki/Histogram] av
+2. Plotta ett [[https://sv.wikipedia.org/wiki/Histogram][histogram]] av
    försökens utfall.
