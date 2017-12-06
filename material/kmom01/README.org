@@ -1,6 +1,8 @@
 #+TITLE: Kmom 01: Introduktion till tidsserieanalys
 #+AUTHOR: Henrik Frediksson och Thomas Sievert
 
+Vem som bedömer vem finner ni [[kmom01-peer-assessment.md][här]].
+
 I detta kursmoment så kommer vi gå igenom vad en tidsserie är och hur
 man approximera derivatan för en tidsserie.
 
