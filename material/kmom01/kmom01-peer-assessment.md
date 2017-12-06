@@ -23,4 +23,5 @@ Bedömningen av hemsidan, ska mailas till sidansvarig med cc till henrik.fredrik
 |[Niklas Andersson](http://www.student.bth.se/~niaa16/dbwebb-kurser/matmod/me/uppgift1/)| Niklas Hallberg|
 |[Marcus Gustafsson](http://www.student.bth.se/~magi16/dbwebb-kurser/matmod/me/kmom01/app.cgi/)| Christoffer Ljungberg|
 |[Niklas Hallberg](http://www.student.bth.se/~nihf16/dbwebb-kurser/matmod/me/uppgift1/app.cgi/graphs)|Marcus Gustafsson |
-|[Christoffer Ljungberg](http://www.student.bth.se/~chju16/dbwebb-kurser/matmod/me/redovisa/)| Niklas Andersson|
+|[Philip Klingzell](http://www.student.bth.se/~phkl16/dbwebb-kurser/matmod/me/uppgift1/app.cgi/)|Niklas Andersson|
+|[Christoffer Ljungberg](http://www.student.bth.se/~chju16/dbwebb-kurser/matmod/me/redovisa/)| Philip Klingzell|
