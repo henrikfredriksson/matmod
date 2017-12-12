@@ -28,5 +28,7 @@ Bedömningen av hemsidan, ska mailas till sidansvarig med cc till henrik.fredrik
 
 
 |Hemsida | Bedöms av|
+|---|---|
 |[Emil Sandberg](http://www.student.bth.se/~emsa16/dbwebb-kurser/matmod/me/redovisa/app.cgi/uppgift1) | Tobias Almroth|
-|[Tobias Almroth](http://www.student.bth.se/~toab16/dbwebb-kurser/matmod/me/redovisa/app.cgi/)|Emil Sandberg |
+|[Tobias Almroth](http://www.student.bth.se/~toab16/dbwebb-kurser/matmod/me/redovisa/app.cgi/) | Emil Sandberg |
+
