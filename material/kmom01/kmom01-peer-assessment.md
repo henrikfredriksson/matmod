@@ -25,3 +25,10 @@ Bedömningen av hemsidan, ska mailas till sidansvarig med cc till henrik.fredrik
 |[Niklas Hallberg](http://www.student.bth.se/~nihf16/dbwebb-kurser/matmod/me/uppgift1/app.cgi/graphs)|Marcus Gustafsson |
 |[Philip Klingzell](http://www.student.bth.se/~phkl16/dbwebb-kurser/matmod/me/uppgift1/app.cgi/)|Niklas Andersson|
 |[Christoffer Ljungberg](http://www.student.bth.se/~chju16/dbwebb-kurser/matmod/me/redovisa/)| Philip Klingzell|
+
+
+|Hemsida | Bedöms av|
+|---|---|
+|[Emil Sandberg](http://www.student.bth.se/~emsa16/dbwebb-kurser/matmod/me/redovisa/app.cgi/uppgift1) | Tobias Almroth|
+|[Tobias Almroth](http://www.student.bth.se/~toab16/dbwebb-kurser/matmod/me/redovisa/app.cgi/) | Emil Sandberg |
+

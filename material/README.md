@@ -13,5 +13,7 @@ Summor |[slides](https://github.com/dbwebb-se/matmod/blob/master/material/MA1477
 Inledande statistik | [slides](01-inledandestatistik.org) |[video](https://youtu.be/3X6psM3HSm4)
 Sannolikhetsbegreppet | [slides](02-sannolikhetsbegreppet.org) |[video](https://www.youtube.com/watch?v=erxl3ClD_vM)
 Slumpförsök med två händelser | [slides](03-slumptvahandelser.org) |[video](https://www.youtube.com/watch?v=jkPvwaiUfl0)
-Betingad sannolikhet och oberoende händelser|[slides](04-betingadsannolikhet.org) | [video](https://youtu.be/fRDJT1H93Jc)
+Betingad sannolikhet och oberoende händelser|[slides](04-betingadsannolikhet.org) |[video](https://www.youtube.com/watch?v=oB77n_IydLk)
+|Diskret slumpvariabel | [slides](05-diskretslumpvariabel.org) |
+|Statistiska mått | [slides](06-matt.org) |
 |---|---|---|

@@ -1,0 +1,122 @@
+#+TITLE: MA1477 Matematisk modellering \newline Läges- och spridningsmått
+#+AUTHOR: Henrik Fredriksson
+#+EMAIL: henrik.fredriksson@bth.se
+#+OPTIONS: toc:nil
+#+startup: beamer
+#+LaTeX_CLASS: beamer
+#+BEAMER_THEME: Boadilla
+#+LATEX_HEADER: \institute[]{Blekinge Tekniska Högskola}
+#+LATEX_HEADER: \usepackage{tikz}
+#+LATEX_HEADER: \usepackage[swedish]{babel}
+
+* Lägesmått
+- När man har en stor mängd data så kanske man vill dra statiska
+slutsatser om datan utifårn en mindre del av datamängden.
+
+- Ett /stickprov/ (eng. sample) avser en mindre del av /populationen/
+- Ett sätt att beskriva ett stickprov är besktiva stickprovet med den
+  /aritmetiska medelvärde/
+
+** Aritemetisk medelvärde
+Medelvärdet $\bar{x}$ för $n$ obeservationer är $x_1, x_2, \ldots x_n$
+är
+\[
+\bar{x} = \frac{x_1 + x_2 + \ldots + x_m}{n} =
+\frac{\displaystyle\sum x}{n}$
+\]
+
+
+* Fler lägesmått
+- /Median/: Det mittersta värdet av $n$ observationer om $n$ är udda.
+  Medelvärdet av de två mittersta värdena om $n$ är jämnt
+  
+- /Typvärde/: Det värde som förekommer flest gånger
+
+* Väntevärde
+
+Medelvärdet för en slumpvariabel kallas /väntevärde/ eller /förväntade
+värde/ och definieras som
+
+\[
+E(X) = \mu = \sum x\cdot p(x).
+\]
+Summeringen omfattar alla värden som variablen kan anta.
+
+I uttrycket $E(X)$ så står $E$ för /expected value/.
+
+* Exempel 
+
+Vad är väntevärdet för antal ögon som visas när vi kastar en tärning.
+
+Väntevärdet blir 
+\begin{align*}
+E(X) &= \mu = \sum x \cdot p(x) \\
+     &= 1\cdot \frac{1}{6} + 2\cdot \frac{1}{6}+3\cdot \frac{1}{6}+4\cdot \frac{1}{6}+5\cdot \frac{1}{6} + 6  \cdot \frac{1}{6} = 3.5
+\end{align*}
+
+Tolkning: Om vi studerar flera tärningskast så kommer vi i genomsnitt
+får 3.5 ögon som visas.
+
+* Stickprovsarians och standardavvikelse
+
+/Stickprovsvariansen/ är ett spridningmått på hur observationer
+varierar kring medelvärdet.
+
+Stickprovsvariansen $s^2$ för $n$ obeservationer $x_1,x_2, \ldots x_n$ beräknas enligt formlen
+\[
+s^2 = \dfrac{(x_1 - \bar{x})^2 + (x_2 - \bar{x})^2 + \ldots + (x_n -
+\bar{x})^2 }{n-1} =  \dfrac{\displaystyle\sum (x-\bar{x})^2 }{n-1}
+\]
+
+* Varians för en slumpvariabel
+
+På likande sätt kan vi definierna variansen för en slumpvariabel $X$.
+Variansen för en slumpvariabel $X$ definieras som väntevärdet för
+funktionen $(X - \mu)^2$, dvs
+\[
+\text{Var}(X) = \sigma^2 = \sum(x- \mu)^2\cdot p(x)
+\]
+
+Om variansen är låg så betyder att observationerna ligger nära
+väntevärdet, dvs spridningen är inte så hög.
+
+
+* Exempel
+
+#+BEGIN_SRC python :results output
+import numpy as np
+a = [1,1,1,1,1,1]
+b = [1,2,1,2,1,1]
+c = [1,1,1,1,1,10]
+print(np.var(a))
+print(np.var(b))
+print(np.var(c))
+#+END_SRC
+
+#+RESULTS:
+: 0.0
+: 0.222222222222
+: 11.25
+
+
+
+* Standardavvikelse
+
+Ett problem med variansen är att det är ett /kvadratiskt/ mått på
+variationen. För att reda bot på detta så kan vi beräkna
+/standardavvikelsen/  som är kvadratroten ur variansen.
+
+\[
+\sigma = \sqrt{\text{Var}(X)}
+\]
+
+* Beräkningsformel för variansen
+Ett enklare sätt att räkna ut variansen är via formeln
+
+\[
+\text{Var}(X) = E(X^2) - [E(x)]^2 = \sum x^2\cdot p(x)- \mu^2
+\]
+
+I =numpy= finns metoderna =var=, =std= för att beräkna varians
+respektive standardavvikelse.
+
