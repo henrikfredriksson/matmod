@@ -15,5 +15,5 @@ Sannolikhetsbegreppet | [slides](02-sannolikhetsbegreppet.org) |[video](https://
 Slumpförsök med två händelser | [slides](03-slumptvahandelser.org) |[video](https://www.youtube.com/watch?v=jkPvwaiUfl0)
 Betingad sannolikhet och oberoende händelser|[slides](04-betingadsannolikhet.org) |[video](https://www.youtube.com/watch?v=oB77n_IydLk)
 |Diskret slumpvariabel | [slides](05-diskretslumpvariabel.org) |
-|Statistiska mått | [slides](0g-matt.org) |
+|Statistiska mått | [slides](06-matt.org) |
 |---|---|---|
