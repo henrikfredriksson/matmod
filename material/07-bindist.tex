@@ -1,4 +1,4 @@
-% Created 2017-12-13 Wed 10:11
+% Created 2017-12-13 Wed 10:14
 % Intended LaTeX compiler: pdflatex
 \documentclass[presentation]{beamer}
 \usepackage[T1]{fontenc}
@@ -20,7 +20,6 @@
 \institute[]{Blekinge Tekniska Högskola}
 \usepackage{tikz}
 \usepackage[swedish, english]{babel}
-\usetheme{Boadilla}
 \author{Henrik Fredriksson}
 \date{\today}
 \title{MA1477 Matematisk modellering \newline Binomialfördelningen}
@@ -36,7 +35,9 @@
 \maketitle
 
 
-\begin{frame}[fragile,label={sec:org7065243}]{Tvåpunktsfördelad slumpvariabel}
+\section{Tvåpunktsfördelad slumpvariabel}
+\label{sec:orgab38b0f}
+
 \begin{itemize}
 \item Vi ska undersöka en stor grupp människor som har en saknar en viss
 \end{itemize}
@@ -55,16 +56,17 @@ Det värde som variablen \(X\) som en slumpmässigt vald individ tilldelas
 
 
 \begin{center}
-\begin{tabular}{llrr}
-\(x\) &  & 0 & 1\\
+\begin{tabular}{lrr}
+\(x\) & 0 & 1\\
 \hline
 \(p(x)\) & \(1-\pi\) & \(\pi\)\\
 \end{tabular}
 \end{center}
-\end{frame}
 
 
-\begin{frame}[fragile,label={sec:org1cee44e}]{Väntevärde och varians}
+\section{Väntevärde och varians}
+\label{sec:orga4253ea}
+
 Väntevärdet för \(X\) blir
 \[
 E(X) = \mu = \sum x\cdot p(x) = 0\cdot (1-\pi) + 1\cdot \pi = \pi
@@ -77,10 +79,11 @@ Det ger variansen
 \[
 \text{Var}(X) = E(X^2) - (E(X))^2 = \pi - \pi^2 = \pi(1-\pi)
 \]
-\end{frame}
 
 
-\begin{frame}[fragile,label={sec:org085cd75}]{Binomialfördelning}
+\section{Binomialfördelning}
+\label{sec:org8532d2f}
+
 Antag att vi gör ett slumpnässigt urval om \(n\) individer från stor
 population och räknar antalet individer som har en viss egenskap
 
@@ -94,10 +97,11 @@ där \(n! = n\cdot (n-1)(n-2)\cdot \ldots 2\cdot 1\).
 \begin{itemize}
 \item Sannolikhetsmodellen kallas \emph{binomialfördelningen} där \(n\) och \(\pi\) är parametrar.
 \end{itemize}
-\end{frame}
 
-\begin{frame}[fragile,label={sec:org7081cda}]{Kodexempel (Exempel 6 sidan 87)}
- \begin{itemize}
+\section{Kodexempel (Exempel 6 sidan 87)}
+\label{sec:orgaf5fc02}
+
+\begin{itemize}
 \item Sannolikhet att en kund tackar "ja" till ett erbjudande är \(60\%\)
 \item Tjugo kunder tillfrågas
 \item Vad är sannolikheten att högst tolv tackar "ja"
@@ -120,10 +124,11 @@ print(pr)
 \begin{verbatim}
 0.584107062442
 \end{verbatim}
-\end{frame}
 
-\begin{frame}[fragile,label={sec:orge22a514}]{Kodexempel (Exempel 7 sidan 88)}
- \begin{minted}[]{python}
+\section{Kodexempel (Exempel 7 sidan 88)}
+\label{sec:orga98fb96}
+
+\begin{minted}[]{python}
 from scipy.stats import binom
 n = 16
 p = 0.3
@@ -142,5 +147,4 @@ print(pr)
 \begin{verbatim}
 0.94821488164
 \end{verbatim}
-\end{frame}
 \end{document}

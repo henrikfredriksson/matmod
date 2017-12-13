@@ -25,7 +25,7 @@ Det värde som variablen $X$ som en slumpmässigt vald individ tilldelas
 är en /tvåpunktsfördelad slumpvariabel/ med sannolikhetsfördelning
 
 
-| $x$    ||       0 |     1 |
+| $x$    |       0 |     1 |
 |--------+---------+-------|
 | $p(x)$ | $1-\pi$ | $\pi$ |
 
