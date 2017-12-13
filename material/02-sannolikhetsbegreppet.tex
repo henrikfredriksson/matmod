@@ -1,0 +1,185 @@
+% Created 2017-12-13 Wed 10:10
+% Intended LaTeX compiler: pdflatex
+\documentclass[presentation]{beamer}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage{minted}
+\institute[]{Blekinge Tekniska Högskola}
+\usepackage{tikz}
+\usepackage[swedish, english]{babel}
+\usetheme{Boadilla}
+\author{Henrik Fredriksson}
+\date{\today}
+\title{MA1477 Matematisk modellering \newline Sannolikhetsbegreppet}
+\hypersetup{
+ pdfauthor={Henrik Fredriksson},
+ pdftitle={MA1477 Matematisk modellering \newline Sannolikhetsbegreppet},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 25.3.1 (Org mode 9.1.3)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+
+\begin{frame}[fragile,label={sec:org6571914}]{Slumpförsök}
+Inom sannolikhetsläran så används ofta \emph{slumpmodeller} för att
+beskriva \emph{slumpförsök}.
+
+\pause
+
+\begin{itemize}
+\item Slumpmässigt välja 200000 personer i Sverige och ta reda på hur
+många som skulle rösta på ett visst politiskt parti idag.
+\item Kasta 50 tärningar och se vad summan av tärningarna blir.
+\item Köpa en trisslott och notera om vi vinner eller inte.
+\end{itemize}
+\pause
+
+När vi utför slumpförsök så kan vi på förhand inte förutse utfallet
+trots att vi vet förutsättningarna.
+\end{frame}
+
+\begin{frame}[fragile,label={sec:org2e3ccee}]{Utfallsrum}
+Mängden av de möjliga utfallen är försöket utfallsrum.
+
+\pause
+
+\begin{block}{Olika utfallsrum}
+Exemplen ovan har så kallade \emph{diskreta utfallrum}. Det är i samtliga
+försök möjligt att räkna upp alla utfallen.
+
+Om ufallsrummet är ett eller flera intervall så kallas det för ett
+\emph{kontinuerliga utfallsrum}.
+
+\pause
+
+Allmänt kan man beskriva ett diskret utfallsrum \(S\) med \(N\) utfall som
+\[
+S = \{e_1,e_2, \ldots ,e_N \}
+\]
+
+där \(e_1, e_2,\ldots e_N\) är olika utfall.
+\end{block}
+\end{frame}
+
+
+\begin{frame}[fragile,label={sec:org162fdc6}]{Händelse}
+Ett försök med kast av tärning har utfallsrummet
+\[
+S = \{1,2,3,4,5,6 \}.
+\]
+
+Om vi till exempel studerar händelsen "udda värde" inträffar så är de
+gynnsamma utfall \(1,3,5\). En händelse är alltså en delmängd av
+utfallsrummet.
+\end{frame}
+
+
+
+\begin{frame}[fragile,label={sec:orgdfdef4c}]{Notation}
+Antag att \(A\) och \(B\) är två händelser som kan inträffa för ett
+slumpförsök. Repetition \(\bar{A}\) (\(A\) -komplement) är "inte A".
+
+\begin{LATEX}
+\begin{center}
+\begin{tabular}{|c|r|}
+\hline
+Uttryck & Tolkning \\
+\hline
+$A \cup B$ & "minst en av händelserna" \\
+$A \cap B$ & "båda händelserna" \\
+$A \cap \bar{B}$ & "enbart händelsen $A$" \\
+$\bar{A} \cap \bar{B}$ & "ingen av händelserna" \\
+$(A\cap \bar{B}) \cup (\bar{A} \cap B) $ & "exakt en av händelserna" \\
+\hline
+\end{tabular}
+\end{center}
+\end{LATEX}
+\end{frame}
+
+
+
+\begin{frame}[fragile,label={sec:org515a898}]{Sannolikheten för en händelse}
+En tentamen i matematik innhåller 5 uppgifter. Sammanställning av resultatet från
+tentamen kan beskrivas med följande tabell
+
+\begin{LATEX}
+\begin{center}
+\begin{tabular}{|r|c|c|c|c|c|c|}
+\hline
+\textbf{Antal rätt} & 0&1&2&3&4&5 \\
+\hline
+\textbf{Relativ frekvens} &0.1&0.2&0.3&0.2&0.1&0.1 \\
+\hline
+\end{tabular}
+\end{center}
+\end{LATEX}
+
+\pause
+Notera att summan av de relativa frekvenserna är \(1\).
+
+Låt \(A\) vara händelsen att vi väljer en student som skrev tentan
+slumpmässigt. Vad är sannoliketen att den utvalde studenten hade minst
+3 rätt på tentan?
+
+\pause
+Sannolikheterna är inte samma för de olika utfallen \((0,1,\ldots, 5)\). Vi kan inte använda den klassiska går
+inte att använda.
+
+\pause
+Mer rimligt att betrakta summan av de relativa frekvenserna för
+händeslen (3,4 eller 5 rätt). Alltså
+\[
+\Pr(A) = 0.2+0.1+0.1 = 0.4
+\]
+\end{frame}
+
+\begin{frame}[fragile,label={sec:org7491d32}]{Elemetarsannolikheter}
+I ett slumpförsök med utfallsrummet \(S = \{e_1,e_2, \ldots ,e_N \}\)
+motsvarar varje utfall \(e_i\) av ett tal \(\Pr(e_i)\). Talen \(\Pr(e_i)\)
+kallas \emph{elementarsannolikheter} och uppfyller
+\[
+\Pr(e_i) \geq 0
+\]
+och
+\[
+\sum_{e_i \in S} \Pr(e_i) = \Pr(e_1) + \Pr(e_2) + \ldots + \Pr(e_N) = 1
+\]
+\end{frame}
+
+\begin{frame}[fragile,label={sec:org9c4b50b}]{Sannolikheten för en händelse}
+En händelse \(A\) är en delmängd av utfallsrummet. Sannolikheten för
+denna händelse är summan av elementarsannolikheterna för de utfall som
+gör att händelsen inträffar, dvs
+\[
+\Pr(A) = \sum_{e_i \in A} \Pr(e_i)
+\]
+\pause
+
+Det följer att
+\[
+0 \leq \Pr(A) \leq 1
+\]
+
+\[
+\Pr(\bar{A}) = 1 - \Pr(A) \quad \text{eller} \quad \Pr(A) = 1 - \Pr(\bar{A})
+\]
+\pause
+Detta känns ifrån den klassiska sannolikhetsdefinitionen.
+\end{frame}
+\end{document}

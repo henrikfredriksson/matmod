@@ -1,0 +1,127 @@
+% Created 2017-12-13 Wed 10:11
+% Intended LaTeX compiler: pdflatex
+\documentclass[presentation]{beamer}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage{minted}
+\institute[]{Blekinge Tekniska Högskola}
+\usepackage{tikz}
+\usepackage[swedish, english]{babel}
+\usetheme{Boadilla}
+\author{Henrik Fredriksson}
+\date{\today}
+\title{MA1477 Matematisk modellering \newline Diskreta slumpvariabler}
+\hypersetup{
+ pdfauthor={Henrik Fredriksson},
+ pdftitle={MA1477 Matematisk modellering \newline Diskreta slumpvariabler},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 25.3.1 (Org mode 9.1.3)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+
+\begin{frame}[fragile,label={sec:org4fe7313}]{Diskret slumpvariabel}
+\begin{itemize}
+\item Hur många personer  är vänsterhänta i en slumpvis vald stad
+\end{itemize}
+med 50000 invånare?
+
+\begin{itemize}
+\item Hur många högskolepoäng har en slumpmässigt vald student på
+webbprogrammeringsprogammet tagit?
+\end{itemize}
+
+\pause
+Svaren till dessa frågor beror på vilken stad vi valt och vilken
+student som tillfrågas.
+
+\pause
+
+Man säger att "antalet vänsterhänta" och "antal tagna högskolepoäng"
+är \emph{slumpvariabler} eller \emph{stokastiska variabler}.
+
+\pause
+
+Eftersom vi är intresserade av antal så är detta \emph{diskreta
+slumpvariabler} eftersom de bara anta isolerade värden på talaxeln.
+\end{frame}
+
+\begin{frame}[fragile,label={sec:org69135f2}]{Sannolikhetsfördelning}
+Låt (stora) \(X\) vara beteckna en slumpvariabel och (lilla) \(x\) värden
+som \(X\) kan anta. Låt \(p(x)\) vara sannolikheten att \emph{variabeln} \(X\)
+antar värdet \(x\), dvs
+\[
+\Pr(X=x) = p(x)
+\]
+
+\pause
+
+Talen \(p(x)\) kallas slumpvariablens sannolikhetsfördelning. För dessa
+gäller det att
+\[
+p(x) \geq 0
+\]
+och
+\[
+\sum p(x) = 1.
+\]
+\end{frame}
+
+
+\begin{frame}[fragile,label={sec:org42b46ea}]{Exempel}
+Vid kast med en tärning så har vi följande sannolikhetsfördelningarna
+\[
+\Pr(X=1) = \frac{1}{6}, \quad \Pr(X=2) = \frac{1}{6}, \ldots, \Pr(X=6)
+= \frac{1}{6}.
+\]
+\end{frame}
+
+
+\begin{frame}[fragile,label={sec:orgbf06fd5}]{Stolpdiagram}
+Vi kan beskriva sannolikhetsfördelningen med stolpdiagram
+
+
+\begin{center}
+\includegraphics[width=.9\linewidth]{./distribution.png}
+\end{center}
+\end{frame}
+
+
+\begin{frame}[fragile,label={sec:org233e5c5}]{Exempel (forts.)}
+När vi vet sannolikhetsfördelningen så kan vi beräkna sannolikheterna
+för en händelse
+
+\begin{itemize}
+\item Sannolikhet för minst en 5:a när vi kastar tärning
+\end{itemize}
+\[
+\Pr(X\geq 5) = \Pr(X=5) + \Pr(X=6) = \frac{1}{6} + \frac{1}{6}= \frac{1}{3}
+\]
+
+\pause
+
+\begin{itemize}
+\item Sannolikhet för högst en 3:a när vi kastar en tärning
+\end{itemize}
+\[
+\Pr(X\leq 3) = \Pr(X=1) + \Pr(X=2) + \Pr(X=3)  = \frac{1}{6} +
+\frac{1}{6}+\frac{1}{6} = \frac{1}{2}
+\]
+\end{frame}
+\end{document}
