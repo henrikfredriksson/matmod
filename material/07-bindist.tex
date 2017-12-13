@@ -1,0 +1,146 @@
+% Created 2017-12-13 Wed 10:16
+% Intended LaTeX compiler: pdflatex
+\documentclass[presentation]{beamer}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage{minted}
+\institute[]{Blekinge Tekniska Högskola}
+\usepackage{tikz}
+\usepackage[swedish, english]{babel}
+\usetheme{Boadilla}
+\author{Henrik Fredriksson}
+\date{\today}
+\title{MA1477 Matematisk modellering \newline Binomialfördelningen}
+\hypersetup{
+ pdfauthor={Henrik Fredriksson},
+ pdftitle={MA1477 Matematisk modellering \newline Binomialfördelningen},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 25.3.1 (Org mode 9.1.3)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+
+\begin{frame}[fragile,label={sec:orgfd70d4b}]{Tvåpunktsfördelad slumpvariabel}
+\begin{itemize}
+\item Vi ska undersöka en stor grupp människor som har en saknar en viss
+\end{itemize}
+egenskap.
+
+\begin{itemize}
+\item Låt \(0 \leq \pi \leq\) vara andelen individer i en population som har en viss
+egenskap.
+
+\item \(\pi = 0\) om en slumpmässigt vald individ ur populationen saknar
+egenskapen och \(\pi = 1\) om individen har egenskapen.
+\end{itemize}
+
+Det värde som variablen \(X\) som en slumpmässigt vald individ tilldelas
+är en \emph{tvåpunktsfördelad slumpvariabel} med sannolikhetsfördelning
+
+
+\begin{center}
+\begin{tabular}{lrr}
+\(x\) & 0 & 1\\
+\hline
+\(p(x)\) & \(1-\pi\) & \(\pi\)\\
+\end{tabular}
+\end{center}
+\end{frame}
+
+
+\begin{frame}[fragile,label={sec:org97be500}]{Väntevärde och varians}
+Väntevärdet för \(X\) blir
+\[
+E(X) = \mu = \sum x\cdot p(x) = 0\cdot (1-\pi) + 1\cdot \pi = \pi
+\]
+Vi har även att 
+\[
+E(X^2) = \sum x^2 \cdot p(x) = \pi
+\]
+Det ger variansen
+\[
+\text{Var}(X) = E(X^2) - (E(X))^2 = \pi - \pi^2 = \pi(1-\pi)
+\]
+\end{frame}
+
+
+\begin{frame}[fragile,label={sec:orgce1e399}]{Binomialfördelning}
+Antag att vi gör ett slumpnässigt urval om \(n\) individer från stor
+population och räknar antalet individer som har en viss egenskap
+
+Sannolikhetfördelningen blir
+\[
+\Pr(X=x) = \frac{n!}{x!(n-x)!}\cdot \pi^x \cdot (1-\pi)^{n-x}
+\] 
+
+där \(n! = n\cdot (n-1)(n-2)\cdot \ldots 2\cdot 1\).
+
+\begin{itemize}
+\item Sannolikhetsmodellen kallas \emph{binomialfördelningen} där \(n\) och \(\pi\) är parametrar.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile,label={sec:org3008e3e}]{Kodexempel (Exempel 6 sidan 87)}
+ \begin{itemize}
+\item Sannolikhet att en kund tackar "ja" till ett erbjudande är \(60\%\)
+\item Tjugo kunder tillfrågas
+\item Vad är sannolikheten att högst tolv tackar "ja"
+\end{itemize}
+
+Vi beräknar \(Pr(X\leq 12) = pr(0) + pr(1) + \ldots + pr(12)\) där \(X\) är Bi(\(n = 20, \pi = 0.6\))
+
+\begin{minted}[]{python}
+from scipy.stats import binom
+n = 20
+p = 0.6
+
+pr = 0
+for i in range(13):
+    pr += binom.pmf(i,n,p)
+
+print(pr)
+\end{minted}
+
+\begin{verbatim}
+0.584107062442
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile,label={sec:org676274f}]{Kodexempel (Exempel 7 sidan 88)}
+ \begin{minted}[]{python}
+from scipy.stats import binom
+n = 16
+p = 0.3
+
+pr = 0
+for i in range(9):
+    pr += binom.pmf(i,n,p)
+
+for i in range(2):
+    pr -= binom.pmf(i,n,p)
+
+
+print(pr)
+\end{minted}
+
+\begin{verbatim}
+0.94821488164
+\end{verbatim}
+\end{frame}
+\end{document}

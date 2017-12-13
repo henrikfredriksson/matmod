@@ -1,0 +1,105 @@
+#+TITLE: MA1477 Matematisk modellering \newline Binomialfördelningen
+#+AUTHOR: Henrik Fredriksson
+#+EMAIL: henrik.fredriksson@bth.se
+#+OPTIONS: toc:nil
+#+startup: beamer
+#+LaTeX_CLASS: beamer
+#+BEAMER_THEME: Boadilla
+#+LATEX_HEADER: \institute[]{Blekinge Tekniska Högskola}
+#+LATEX_HEADER: \usepackage{tikz}
+#+LATEX_HEADER: \usepackage[swedish]{babel}
+
+
+* Tvåpunktsfördelad slumpvariabel
+
+- Vi ska undersöka en stor grupp människor som har en saknar en viss
+egenskap.
+
+- Låt $0 \leq \pi \leq$ vara andelen individer i en population som har en viss
+  egenskap. 
+
+- $\pi = 0$ om en slumpmässigt vald individ ur populationen saknar
+  egenskapen och $\pi = 1$ om individen har egenskapen.
+
+Det värde som variablen $X$ som en slumpmässigt vald individ tilldelas
+är en /tvåpunktsfördelad slumpvariabel/ med sannolikhetsfördelning
+
+
+| $x$    |       0 |     1 |
+|--------+---------+-------|
+| $p(x)$ | $1-\pi$ | $\pi$ |
+
+
+* Väntevärde och varians
+
+Väntevärdet för $X$ blir
+\[
+E(X) = \mu = \sum x\cdot p(x) = 0\cdot (1-\pi) + 1\cdot \pi = \pi
+\]
+Vi har även att 
+\[
+E(X^2) = \sum x^2 \cdot p(x) = \pi
+\]
+Det ger variansen
+\[
+\text{Var}(X) = E(X^2) - (E(X))^2 = \pi - \pi^2 = \pi(1-\pi)
+\]
+
+
+* Binomialfördelning
+
+Antag att vi gör ett slumpnässigt urval om $n$ individer från stor
+population och räknar antalet individer som har en viss egenskap
+
+Sannolikhetfördelningen blir
+\[
+\Pr(X=x) = \frac{n!}{x!(n-x)!}\cdot \pi^x \cdot (1-\pi)^{n-x}
+\] 
+
+där $n! = n\cdot (n-1)(n-2)\cdot \ldots 2\cdot 1$.
+
+- Sannolikhetsmodellen kallas /binomialfördelningen/ där $n$ och $\pi$ är parametrar.
+
+* Kodexempel (Exempel 6 sidan 87)
+
+- Sannolikhet att en kund tackar "ja" till ett erbjudande är $60\%$
+- Tjugo kunder tillfrågas
+- Vad är sannolikheten att högst tolv tackar "ja"
+
+Vi beräknar $Pr(X\leq 12) = pr(0) + pr(1) + \ldots + pr(12)$ där $X$ är Bi($n = 20, \pi = 0.6$)
+
+#+BEGIN_SRC python :results output
+from scipy.stats import binom
+n = 20
+p = 0.6
+
+pr = 0
+for i in range(13):
+    pr += binom.pmf(i,n,p)
+
+print(pr)
+#+END_SRC
+
+#+RESULTS:
+: 0.584107062442
+
+* Kodexempel (Exempel 7 sidan 88)
+
+#+BEGIN_SRC python :results output
+from scipy.stats import binom
+n = 16
+p = 0.3
+
+pr = 0
+for i in range(9):
+    pr += binom.pmf(i,n,p)
+
+for i in range(2):
+    pr -= binom.pmf(i,n,p)
+
+
+print(pr)
+#+END_SRC
+
+#+RESULTS:
+: 0.94821488164
