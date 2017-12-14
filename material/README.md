@@ -17,4 +17,5 @@ Betingad sannolikhet och oberoende händelser|[slides](04-betingadsannolikhet.pd
 |Diskret slumpvariabel | [slides](05-diskretslumpvariabel.pdf) |
 |Statistiska mått | [slides](06-matt.pdf) |
 |Binomialfördelning |[slides](07-bindist.pdf) |
+|Normalfördelning | | [video](https://www.youtube.com/watch?v=uRe0unbQrIs) | 
 |---|---|---|
