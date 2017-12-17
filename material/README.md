@@ -3,6 +3,9 @@ Material
 
 Here are various written course material, exercises and reading material.
 
+Övningstentamen finns nu tillgängligt [här](MA1477_practice_exam.pdf)
+
+
 ## Statistik 
 
 Lösningstips till övningar i Statisk Dataanalys (4:e upplagan) finns [här](https://www.studentlitteratur.se/files/sites/dataanalys/tips.pdf)
