@@ -3,7 +3,7 @@ Material
 
 Here are various written course material, exercises and reading material.
 
-Övningstentamen finns nu tillgängligt [här](MA1477_practice_exam.pdf)
+Övningstentamen finns nu tillgängligt [här](ma1477_practice_exam.pdf)
 
 
 ## Statistik 
