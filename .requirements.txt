@@ -1,5 +1,7 @@
-pylint >= 1.4.4
+pylint
 sympy
+numpy
+matplotlib
 
 # studserver
 # sudo python3 -m pip install sympy

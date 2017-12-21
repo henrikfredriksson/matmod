@@ -6,8 +6,8 @@ Examples on how to plot using matplotlib
 python3 -m pip install matplotlib numpy
 """
 
-import matplotlib.pyplot as plt
 import numpy as np
+import matplotlib.pyplot as plt
 
 def main():
     """

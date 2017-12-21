@@ -8,8 +8,8 @@ Plot the relative frequency value of a dice
 python3 -m pip install matplotlib numpy
 """
 
-import matplotlib.pyplot as plt
 import numpy as np
+import matplotlib.pyplot as plt
 
 def main():
     """
