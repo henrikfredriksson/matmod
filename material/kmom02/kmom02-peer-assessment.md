@@ -22,5 +22,4 @@ Utgå ifrån uppgiftens specifikationer när gör bedömingen
 |[Ylva Wright](http://www.student.bth.se/~ylwr15/dbwebb-kurser/matmod/me/uppgift2/kmom02.html)|Peder Tornberg|
 |[Alexey Vorobyev](http://80.78.218.152:1338/)|Philip Klingzell |
 |[Christoffer Jungberg](http://www.student.bth.se/~chju16/dbwebb-kurser/matmod/me/redovisa/#kmom02)|Alexey Vorobyev|
-|[Philip Klingzell](http://www.student.bth.se/~phkl16/dbwebb-kurser/matmod/me/uppgift2/app.cgi/)|Christoffer Jungberg
-|
+|[Philip Klingzell](http://www.student.bth.se/~phkl16/dbwebb-kurser/matmod/me/uppgift2/app.cgi/)|Christoffer Jungberg|
