@@ -1,4 +1,4 @@
-# Kamraträttning Kmom01
+# Kamraträttning Kmom02
 
 Bedömningen av hemsidan, ska mailas till sidansvarig med cc till
 henrik.fredriksson@bth.se
@@ -20,4 +20,6 @@ Utgå ifrån uppgiftens specifikationer när gör bedömingen
 |[Emil Sandberg](http://www.student.bth.se/~emsa16/dbwebb-kurser/matmod/me/redovisa/app.cgi/uppgift21)|Ara Nour Bakhsh|
 |[Peder Tornberg](http://www.student.bth.se/~peto16/dbwebb-kurser/matmod/me/uppgift2/app.cgi/)|Emil Sandberg|
 |[Ylva Wright](http://www.student.bth.se/~ylwr15/dbwebb-kurser/matmod/me/uppgift2/kmom02.html)|Peder Tornberg|
-
+|[Alexey Vorobyev](http://80.78.218.152:1338/)|Philip Klingzell |
+|[Christoffer Jungberg](http://www.student.bth.se/~chju16/dbwebb-kurser/matmod/me/redovisa/#kmom02)|Alexey Vorobyev|
+|[Philip Klingzell](http://www.student.bth.se/~phkl16/dbwebb-kurser/matmod/me/uppgift2/app.cgi/)|Christoffer Jungberg|
