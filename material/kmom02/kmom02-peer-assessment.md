@@ -16,7 +16,7 @@ Utgå ifrån uppgiftens specifikationer när gör bedömingen
 |[Marcus Gustafsson](http://www.student.bth.se/~magi16/dbwebb-kurser/matmod/me/kmom01/app.cgi/kmom02)|Martin Fagerlund|
 |[Magnus Greiff](http://www.student.bth.se/~magp16/dbwebb-kurser/matmod/me/uppgift2/)|Marcus Gustafsson|
 |[André  Johansson](http://andremartinj.pythonanywhere.com/kmom02)|Magnus Greiff|
-|[Ara Nour Bakhsh](http://www.student.bth.se/~arno16/dbwebb-kurser/matmod/me/uppgift2/)||André Johansson|
+|[Ara Nour Bakhsh](http://www.student.bth.se/~arno16/dbwebb-kurser/matmod/me/uppgift2/)|André Johansson|
 |[Emil Sandberg](http://www.student.bth.se/~emsa16/dbwebb-kurser/matmod/me/redovisa/app.cgi/uppgift21)|Ara Nour Bakhsh|
 |[Peder Tornberg](http://www.student.bth.se/~peto16/dbwebb-kurser/matmod/me/uppgift2/app.cgi/)|Emil Sandberg|
 |[Ylva Wright](http://www.student.bth.se/~ylwr15/dbwebb-kurser/matmod/me/uppgift2/kmom02.html)|Peder Tornberg|
