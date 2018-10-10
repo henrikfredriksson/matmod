@@ -15,9 +15,6 @@ The course repo is managed by a [dbwebb command line utility](https://dbwebb.se/
 
 Literature
 -------------------
-Matematik 5000 3c Basåret , Alfredsson m.fl., Natur, 
-ISBN: 978-91-27-43010-5 
-
 Statistisk dataanalys, Svante Körner och Lars Wahlgren,
 ISBN:978-91-44-10870-4
 
